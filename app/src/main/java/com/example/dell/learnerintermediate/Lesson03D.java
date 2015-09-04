@@ -14,6 +14,6 @@ public class Lesson03D extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fr_less_03_b, container, false);
+        return inflater.inflate(R.layout.fr_less_03_d, container, false);
     }
 }

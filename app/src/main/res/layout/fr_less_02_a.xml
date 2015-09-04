@@ -106,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
-                android:text="The Sun does not rises in the east. "
+                android:text="The Sun does not rise in the east. "
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/ColorPrimaryDark" />
             <TextView

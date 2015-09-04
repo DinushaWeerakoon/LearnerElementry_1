@@ -1,5 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:padding="12dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1. Select the appropriate verb form to complete the sentence."
+        android:id="@+id/q1"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        />
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The president _____________ on TV tonight."
+        android:paddingBottom="30dp"
+        android:id="@+id/textView1"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView1"
+        android:layout_above="@+id/a"
+        android:orientation="vertical"
+        android:id="@+id/radio">
+
+        <RadioButton android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="will speak"
+            android:onClick="onRadioButtonClicked1"/>
+
+        <RadioButton android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="is to arrive"
+            android:onClick="onRadioButtonClicked2"/>
+
+        <RadioButton android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="will come"
+            android:onClick="onRadioButtonClicked3"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:paddingBottom="30dp"
+        android:id="@+id/cor"
+        />
 
 </LinearLayout>

@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:padding="12dp"
+    android:id="@+id/l1">
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1. Listen to the instructions by clicking the Listen button. Then, drag and drop the given items in to each correct box."
+            android:id="@+id/q1"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="30dp"
+            />
+
+        <ImageButton
+            android:id="@+id/playVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/lis" />
+
+
+         <ImageView
+             android:layout_width="200dp"
+             android:layout_height="200dp"
+             android:layout_gravity="center_horizontal"
+             android:src="@drawable/tree1" />
+
+
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:gravity="left"
+            android:src="@drawable/bank" />
+
+        <ImageView
+            android:id="@+id/i2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/i1"
+            android:layout_toEndOf="@+id/i1"
+            android:src="@drawable/lake" />
+        <ImageView
+            android:id="@+id/i3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/i2"
+            android:layout_toEndOf="@+id/i2"
+            android:src="@drawable/house" />
+        <ImageView
+            android:id="@+id/i4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/i3"
+            android:src="@drawable/paddy" />
+
+        <ImageView
+            android:id="@+id/i5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/i4"
+            android:src="@drawable/post" />
+
+        </LinearLayout>
+
+     </ScrollView>
 
 </LinearLayout>
