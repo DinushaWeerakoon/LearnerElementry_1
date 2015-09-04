@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txtPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_heading"
+        android:text="Asking for permission"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/playVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play" />
+
+    <VideoView
+        android:id="@+id/less_5_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/tab_pera"
+        android:layout_marginTop="@dimen/tab_pera"
+        android:background="@color/ColorAccent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Generally, we use following modals to make a request for permission."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="•	Can
+\n•	May
+\n•	Might
+\n•	Could
+\n•	Would"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtLine3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="When making requests, it requires the speaker to be aware of levels of formality."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+        <TextView
+        android:id="@+id/txtLine4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="\nMore formal expressions:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/txtLine5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="With persons of authority, with unfamiliar people"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/txtLine6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="\nLess formal expressions:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/txtLine7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="With peers, with familiar people"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+
+    <TextView
+        android:id="@+id/txtLine8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="\nSome expressions are used with persons of some authority and with people whom we are unfamiliar while others are used with peers and people with whom we are familiar. "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtLine9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="\nMore formal:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/txtLine10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Eg: May I go to the restroom?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/txtLine11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="\nLess formal:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/txtLine12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Eg: Can I use your computer?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

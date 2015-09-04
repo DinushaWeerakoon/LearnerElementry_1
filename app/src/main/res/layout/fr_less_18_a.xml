@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txt18a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_heading"
+        android:text="Notice - A source of information"
+        android:textSize="@dimen/text_size_heading" />
+
+    <ImageButton
+        android:id="@+id/playVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play" />
+
+    <VideoView
+        android:id="@+id/less_18_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/tab_pera"
+        android:layout_marginTop="@dimen/tab_pera"
+        android:background="@color/ColorAccent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Notice is used to announce different types of events. It could be about,"
+                android:textSize="@dimen/text_size"
+                           />
+
+            <TextView
+                android:id="@+id/txtLine1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="a competition, exhibition, celebration, death, postponement etc."
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/ColorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/txtLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="It is a short piece of writing and is pinned up or pasted on boards.
+                \nThere are certain points we should consider when we write a notice."
+                android:textSize="@dimen/text_size"
+                />
+            <TextView
+                android:id="@+id/txtLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="•	It should be to the point.
+\n•	Formal in style and language.
+\n•	Purpose should be stated clearly.
+\n•	Should not leave scope for further enquires.
+"
+                android:textSize="@dimen/text_size"
+                />
+
+                    </LinearLayout>
+            </ScrollView>
+
+  </LinearLayout>

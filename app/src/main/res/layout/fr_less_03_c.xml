@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_heading"
+        android:text="More on Prepositions"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/playVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play" />
+
+    <VideoView
+        android:id="@+id/less_3_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/tab_pera"
+        android:layout_marginTop="@dimen/tab_pera"
+        android:background="@color/ColorAccent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Prepositions of Time"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/txtLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="at, in, on, for, by, since, etc."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textLine3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eg: I start work at 7.00 am."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark" />
+
+
+
+    <TextView
+        android:id="@+id/txtLine6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="\nPrepositions of Place, Location"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/txtLine7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="at, in, on, near, under, between, across, etc."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+
+
+        <TextView
+            android:id="@+id/textLine8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eg: They were waiting at the bus halt."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/ColorPrimaryDark" />
+
+
+    <TextView
+        android:id="@+id/txtLine11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="\nPrepositions of Movement Direction"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/txtLine12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="to, through, across, towards, in (to), on (to), etc."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+
+
+        <TextView
+            android:id="@+id/textLine13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eg: I moved to Germany in 2005. "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/ColorPrimaryDark" />
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nBEWARE..!!! "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorAccent"
+        />
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One preposition might show different relationships. "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
+
+   </ScrollView>
+
+
+</LinearLayout>

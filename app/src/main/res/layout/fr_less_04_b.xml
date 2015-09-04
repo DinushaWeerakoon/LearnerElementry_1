@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_heading"
+        android:text="Ambitions"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <ImageButton
+        android:id="@+id/playVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play" />
+
+    <VideoView
+        android:id="@+id/less_4_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/tab_pera"
+        android:layout_marginTop="@dimen/tab_pera"
+        android:background="@color/ColorAccent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="In future tense , the event described by the verb, has not yet happened   BUT expected to happen in the future."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="\nThe most common auxiliiary verbs used to express future are;  will and shall."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Eg:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/txtLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="I will become an astronaut"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/txtLine5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="or"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+            <TextView
+                android:id="@+id/txtLine6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="I shall become an astronaut."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+            <TextView
+                android:id="@+id/txtLine7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:textStyle="bold"
+                android:text="The event described by will or shall is to; become an astronaut BUT This has not happened yet and it is expected to happen in future"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

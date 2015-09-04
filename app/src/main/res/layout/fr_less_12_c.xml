@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txt12c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_heading"
+        android:text="Specified Quantities"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/less_12_c"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="verbs"
+                android:src="@drawable/less_12_c"/>
+
+
+            <TextView
+                android:id="@+id/txtLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="When shopping, we cannot ask for unspecified quantities.
+\nYou cannot ask the shop owner, &quot; Please give me a little oil &quot;. Let's see what quantities we need to ask for, when we go shopping.
+"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <TextView
+                android:id="@+id/txtLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Eg:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+
+
+            <TextView
+                android:id="@+id/txtLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="•	rice: 1 kilo/2 kilos of rice
+\n•	oil: half a bottle/quarter a bottle/1 litre of oil
+\n•	fish: 500 grams/1 kilo of fish
+"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/txtLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="\nWhen talking about quantities you need some quantifying labels such as a pair of, a box of, etc..."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <TextView
+                android:id="@+id/txtLine5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Eg:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+
+
+            <TextView
+                android:id="@+id/txtLine6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="•	two boxes of matches
+\n•	two pairs of scissors
+\n•	a packet of milk powder
+"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/txtLine7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="\nSo, depending on the nature of what you want to buy, we can have different quantity types."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

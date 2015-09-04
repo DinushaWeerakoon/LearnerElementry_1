@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txtPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_heading"
+        android:text="Writing request letters"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/playVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play" />
+
+    <VideoView
+        android:id="@+id/less_5_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/tab_pera"
+        android:layout_marginTop="@dimen/tab_pera"
+        android:background="@color/ColorAccent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="We write letters requesting permission from someone or some institution etc... to get approval for an action."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Eg:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/txtLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="•	Permission from a teacher to leave school early for a genuine reason.
+\n•	To get permission to visit Hambantota Harbour."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/txtLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Generally, these letters are formal letters and the correct format should be followed."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

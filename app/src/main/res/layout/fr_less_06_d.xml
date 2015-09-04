@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txtPast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_heading"
+        android:text="Use the past form of the verbs in short narratives"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="A narrative is a story. It describes events in the past. So we use the past form of verbs in narratives. We can use 3 verb forms to describe past events."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/less_6_d"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="verbs"
+                android:src="@drawable/less_6_d"/>
+
+
+
+
+            <TextView
+                android:id="@+id/txtLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Past Continuous form is used to describe an action that continued for some time."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <TextView
+                android:id="@+id/txtLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="[Was/ Were + verb +ing]"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+              />
+
+            <TextView
+                android:id="@+id/txtLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Eg:As the rabbit was running very fast it felt tired."               android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/txtLine5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="The Simple Past is used to talk about actions that happened at a specific time in the past."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+
+                        <TextView
+                android:id="@+id/txtLine6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Eg:As the rabbit was running very fast, it felt tired."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+            <TextView
+                android:id="@+id/txtLine7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="The Past Perfect is used to describe a completed action before another action in the past."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <TextView
+                android:id="@+id/txtLine8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="[Had + Past Perfect verb form]"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txtLine9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Eg:The rabbit saw that the tortoise had run past him."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"/>
+            />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

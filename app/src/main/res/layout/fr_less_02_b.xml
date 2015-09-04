@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_heading"
+        android:text="“Wh ” Questions"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+        android:id="@+id/txtLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Questions beginning with “Wh ” can be formed in simple present form. "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_less_2_b"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Lesson 02 image"
+        android:src="@drawable/less_2_b"/>
+
+    <TextView
+        android:id="@+id/txtLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Eg1: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+
+    <TextView
+        android:id="@+id/txtLine3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Kamal is a doctor who works in General hospital."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/txtLine4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Question: What is Kamal?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/txtLine5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Answer: He is a doctor."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/txtLine6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="\nEg2: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/txtLine7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Kamal who works till late night comes home around 11.00 pm. "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/txtLine8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Question: Who works till late night?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+    <TextView
+        android:id="@+id/txtLine9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_pera"
+        android:text="Answer: Kamal  works till late night."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+</LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

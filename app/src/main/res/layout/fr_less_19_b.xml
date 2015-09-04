@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_heading"
+        android:id="@+id/qst_1"
+        android:text="Read the following lines carefully and put them in order to get a meaningful verse without twisting your tongue."/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_1"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a branch on the log in the hole in the bottom of the sea."/>
+
+            <TextView
+                android:id="@+id/blnk_1"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a branch on the log in the hole in the bottom of the sea."/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_2"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a frog on the bump on the branch on the log in the hole in the bottom of the sea."/>
+            <TextView
+                android:id="@+id/blnk_2"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a branch on the log in the hole in the bottom of the sea."/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_3"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a hole in the bottom of the sea."/>
+            <TextView
+                android:id="@+id/blnk_3"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a branch on the log in the hole in the bottom of the sea."/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_4"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a speck on the tail on the frog on the bump on the branch on the log in the hole in the bottom of the sea."/>
+            <TextView
+                android:id="@+id/blnk_4"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a branch on the log in the hole in the bottom of the sea."/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_5"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a log in the hole in the bottom of the sea."/>
+            <TextView
+                android:id="@+id/blnk_5"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a branch on the log in the hole in the bottom of the sea."/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_6"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's fleck on the speck on the tail on the frog on the bump on the brach on the log in the hole in the bottom of the sea."/>
+            <TextView
+                android:id="@+id/blnk_6"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a branch on the log in the hole in the bottom of the sea."/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_7"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's fleck on the speck on the tail on the frog on the bump on the brach on the log in the hole in the bottom of the sea."/>
+            <TextView
+                android:id="@+id/blnk_7"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There's a branch on the log in the hole in the bottom of the sea."/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+</ScrollView>

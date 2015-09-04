@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txt20a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tab_heading"
+        android:text="Using the Dictionary to Build Word Power"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playVideo"
+        android:src="@drawable/play"/>
+
+    <VideoView
+        android:id="@+id/less_20_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/ColorAccent"
+        android:layout_marginTop="@dimen/tab_pera"
+        android:layout_marginBottom="@dimen/tab_pera"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Dictionary is an invaluable aid and a guide to every person with education. When a dictionary is used to its fullest extent, it can provide a great deal of information."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtLine8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="\nMany of the words listed in the dictionary have more than one meaning. Some of them may be already a part of your vocabulary. Therefore it will be a good way to increase your set of vocabulary by learning the additional meanings for words as well."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtLine9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="Eg:"
+                android:textColor="@color/ColorPrimaryDark"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!--Add table Here..-->
+
+            <TextView
+                android:id="@+id/txtLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="The word ‘slip' is used in seven different ways in the following sentences. Refer to a standard dictionary and get to know the definition of the word used in each sentences"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorPrimaryDark"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/txtLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="1.	Chathuri slowly slipped from the discussion table as she was guilty.
+\n2.	My mother slipped in the bathroom yesterday and she is hospitalized.
+\n3.	Mr. Fernando made a slip while he was talking to the chairman.
+\n4.	He is looking for a slip of a girl.
+\n5.	The children were asked to write their addresses on a slip of a paper.
+\n6.	I slipped off my coat as it was very hot.
+\n7.	We brought new slips for the pillows in your room.
+"
+                android:textColor="@color/ColorPrimaryDark"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

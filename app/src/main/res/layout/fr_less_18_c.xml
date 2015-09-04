@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="5dp"
+        android:text="Complete the following notice by dragging the correct option to the blank."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_heading"
+        android:id="@+id/less_topic_1"
+        android:text="SRI LANKA ELECTRICITY BOARD"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_heading"
+        android:id="@+id/less_topic_3"
+        android:text="ANURADHAPURA"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_heading"
+        android:id="@+id/less_topic_2"
+        android:text="POWER OUTAGE NOTICE"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="10dp"
+        android:id="@+id/blnk_1"
+        android:text="1......................................................................................."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:text="Unit of the SLEB will be perfoming required services of the">
+    </TextView>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/text_size" android:id="@+id/blnk_2"
+    android:text="2.......................................................................................">
+</TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:text="of the 'Deyata Kirula' area in Oyamaduwa on ">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/blnk_3"
+        android:text="3.....................................................................................">
+    </TextView>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/text_size"
+    android:text="In order to safely perform this service, power will be turned off for 5 hours">
+</TextView>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/text_size" android:id="@+id/blnk_4"
+    android:text="4..................................................................................... .">
+</TextView>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/text_size"
+    android:text="The DMU will try to minimize any inconvenience related to this. Your ">
+</TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/blnk_5"
+        android:text="5....................................................................................">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:text="is appreciated.">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:text="D.M.Gunasekara."
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:text="Deputy General Manager." />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:text="starting at 8.00 a.m."
+        android:textSize="@dimen/text_size"
+        android:id="@+id/ans_1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Yellow"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/ans_2"
+        android:layout_alignStart="@+id/ans_2" />
+
+    <TextView
+        android:text="Distribution and Maintenance"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/ans_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ans_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Yellow"/>
+
+    <TextView
+        android:text="understanding and cooperation"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/ans_3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ans_2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/Yellow"/>
+
+    <TextView
+        android:text="electrical system"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/ans_4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ans_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Yellow"/>
+    <TextView
+        android:text="the 23rd January 2012"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/ans_5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ans_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Yellow"
+        />
+
+</RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>
