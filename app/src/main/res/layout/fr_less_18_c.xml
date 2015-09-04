@@ -16,6 +16,7 @@
         android:paddingBottom="5dp"
         android:textSize="@dimen/text_size"
         android:layout_marginTop="5dp"
+        android:textStyle="bold"
         android:text="Complete the following notice by dragging the correct option to the blank."/>
 
 
@@ -145,10 +146,10 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/Yellow"
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/ans_2"
-        android:layout_alignStart="@+id/ans_2" />
+        android:layout_alignStart="@+id/ans_2"
+        android:textColor="@color/LightBlue"/>
 
     <TextView
         android:text="Distribution and Maintenance"
@@ -159,7 +160,7 @@
         android:layout_below="@+id/ans_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/Yellow"/>
+        android:textColor="@color/LightBlue"/>
 
     <TextView
         android:text="understanding and cooperation"
@@ -170,28 +171,30 @@
         android:layout_below="@+id/ans_2"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@color/Yellow"/>
+        android:textColor="@color/LightBlue"/>
 
     <TextView
         android:text="electrical system"
         android:textSize="@dimen/text_size"
         android:id="@+id/ans_4"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_below="@+id/ans_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/Yellow"/>
+        android:textColor="@color/LightBlue"
+        android:layout_above="@+id/ans_2"
+        android:layout_toRightOf="@+id/ans_5"
+        android:layout_toEndOf="@+id/ans_5"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
     <TextView
         android:text="the 23rd January 2012"
         android:textSize="@dimen/text_size"
         android:id="@+id/ans_5"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
-        android:layout_below="@+id/ans_4"
+        android:layout_below="@+id/ans_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/Yellow"
+        android:textColor="@color/LightBlue"
         />
 
 </RelativeLayout>

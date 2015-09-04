@@ -8,6 +8,7 @@
     <color name="ColorErr">#FF0000</color>
     <color name="ColorDefault">#000000</color>
     <color name="Yellow">#ffff00</color>
+   <color name="LightBlue">#1E90FF</color>
 
 </resources>
 
