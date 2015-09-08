@@ -1,5 +1,6 @@
 package com.example.dell.learnerintermediate;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -23,6 +24,8 @@ public class Lesson17B extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fr_less_17_b, container, false);
 
+        final Processor radio= new Processor();
+
         final RadioButton rb1_1 =(RadioButton) view.findViewById(R.id.ans_1_1);
         final RadioButton rb1_2 =(RadioButton) view.findViewById(R.id.ans_1_2);
         final RadioButton rb2_1 =(RadioButton) view.findViewById(R.id.ans_2_1);
@@ -30,59 +33,48 @@ public class Lesson17B extends Fragment {
         final RadioButton rb3_1 =(RadioButton) view.findViewById(R.id.ans_3_1);
         final RadioButton rb3_2 =(RadioButton) view.findViewById(R.id.ans_3_2);
 
-        View.OnClickListener rb11Lisnr= new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rb1_1.setTextColor(getResources().getColor(R.color.ColorErr));
-                rb1_2.setTextColor(getResources().getColor(R.color.ColorDefault));
-            }
-        };
-        rb1_1.setOnClickListener(rb11Lisnr);
+        rb1_1.setTag("None");
+        rb1_2.setTag("yes");
+        rb2_1.setTag("None");
+        rb2_2.setTag("yes");
+        rb3_1.setTag("yes");
+        rb3_2.setTag("None");
 
-        View.OnClickListener rb12Lisnr= new View.OnClickListener() {
+        View.OnClickListener clickListener1 =new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rb1_2.setTextColor(getResources().getColor(R.color.ColorExample));
-                rb1_1.setTextColor(getResources().getColor(R.color.ColorDefault));
+                rb1_1.setTextColor(Color.BLACK);
+                rb1_2.setTextColor(Color.BLACK);
+                radio.processRadioButton(v);
             }
         };
-        rb1_2.setOnClickListener(rb12Lisnr);
 
-        View.OnClickListener rb21Lisnr= new View.OnClickListener() {
+        View.OnClickListener clickListener2 =new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rb2_1.setTextColor(getResources().getColor(R.color.ColorErr));
-                rb2_2.setTextColor(getResources().getColor(R.color.ColorDefault));
+                rb2_1.setTextColor(Color.BLACK);
+                rb2_2.setTextColor(Color.BLACK);
+                radio.processRadioButton(v);
             }
         };
-        rb2_1.setOnClickListener(rb21Lisnr);
 
-        View.OnClickListener rb22Lisnr= new View.OnClickListener() {
+        View.OnClickListener clickListener3 =new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rb2_1.setTextColor(getResources().getColor(R.color.ColorDefault));
-                rb2_2.setTextColor(getResources().getColor(R.color.ColorExample));
+                rb3_1.setTextColor(Color.BLACK);
+                rb3_2.setTextColor(Color.BLACK);
+                radio.processRadioButton(v);
             }
         };
-        rb2_2.setOnClickListener(rb22Lisnr);
 
-        View.OnClickListener rb31Lisnr= new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rb3_1.setTextColor(getResources().getColor(R.color.ColorExample));
-                rb3_2.setTextColor(getResources().getColor(R.color.ColorDefault));
-            }
-        };
-        rb3_1.setOnClickListener(rb31Lisnr);
+        rb1_1.setOnClickListener(clickListener1);
+        rb1_2.setOnClickListener(clickListener1);
+        rb2_1.setOnClickListener(clickListener2);
+        rb2_2.setOnClickListener(clickListener2);
+        rb3_1.setOnClickListener(clickListener3);
+        rb3_2.setOnClickListener(clickListener3);
 
-        View.OnClickListener rb32Lisnr= new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rb3_1.setTextColor(getResources().getColor(R.color.ColorDefault));
-                rb3_2.setTextColor(getResources().getColor(R.color.ColorErr));
-            }
-        };
-        rb3_2.setOnClickListener(rb32Lisnr);
+
 
 
 
@@ -98,12 +90,12 @@ public class Lesson17B extends Fragment {
                 rg2.clearCheck();
                 rg3.clearCheck();
 
-                rb1_1.setTextColor(getResources().getColor(R.color.ColorDefault));
-                rb1_2.setTextColor(getResources().getColor(R.color.ColorDefault));
-                rb2_1.setTextColor(getResources().getColor(R.color.ColorDefault));
-                rb2_2.setTextColor(getResources().getColor(R.color.ColorDefault));
-                rb3_1.setTextColor(getResources().getColor(R.color.ColorDefault));
-                rb3_2.setTextColor(getResources().getColor(R.color.ColorDefault));
+                rb1_1.setTextColor(getResources().getColor(R.color.ColorBlack));
+                rb1_2.setTextColor(getResources().getColor(R.color.ColorBlack));
+                rb2_1.setTextColor(getResources().getColor(R.color.ColorBlack));
+                rb2_2.setTextColor(getResources().getColor(R.color.ColorBlack));
+                rb3_1.setTextColor(getResources().getColor(R.color.ColorBlack));
+                rb3_2.setTextColor(getResources().getColor(R.color.ColorBlack));
             }
         };
         resetBtn.setOnClickListener(resetLisnr);

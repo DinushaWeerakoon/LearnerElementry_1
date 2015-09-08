@@ -1,129 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Match the following e-cards with the suitable situation. Drag and Drop the wish to the correct e-card."
-    android:textStyle="bold"
-    android:textSize="@dimen/text_size"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/image_1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/less_21_g"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="................................"
-        android:layout_below="@+id/image_1"
-        android:layout_marginLeft="10dp"
-        android:id="@+id/ans_1" />
+    android:layout_margin="@dimen/activity_horizontal_margin">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/image_2"
-        android:layout_alignTop="@+id/image_1"
-        android:layout_toRightOf="@+id/image_1"
-        android:layout_toEndOf="@+id/image_1"
-        android:src="@drawable/less_21_b"
-        android:layout_marginLeft="5dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text=".................................."
-        android:layout_below="@+id/image_2"
-        android:layout_alignLeft="@+id/image_2"
-        android:id="@+id/ans_2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_heading"
+            android:id="@+id/qst_1"
+            android:layout_marginBottom="10dp"
+            android:text="1. Instructions of sending an e-card are given below.Make the steps in correct order by dragging and dropping."/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/image_3"
-        android:layout_alignTop="@+id/image_1"
-        android:layout_toRightOf="@+id/image_2"
-        android:layout_toEndOf="@+id/image_2"
-        android:src="@drawable/less_21_c"
-        android:layout_marginLeft="5dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text=".................................."
-        android:layout_below="@+id/image_3"
-        android:layout_alignLeft="@+id/image_3"
-        android:id="@+id/ans_3" />
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:text="Include your email recipients."
+            android:background="@drawable/draggles_back"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Happy Married life!"
-        android:layout_below="@+id/image_1"
-        android:id="@+id/txt_1"
-        android:textSize="@dimen/text_size"
-        android:textColor="@color/LightBlue"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Happy New Year!"
-        android:id="@+id/txt_2"
-        android:layout_alignTop="@+id/txt_1"
-        android:layout_alignRight="@+id/ans_3"
-        android:textSize="@dimen/text_size"
-        android:textColor="@color/LightBlue"/>
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:background="@drawable/draggles_back"
+            android:text="Type and add a personal note to your card.Remember,it should be short."/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Happy Birth Day!"
-        android:layout_below="@+id/txt_1"
-        android:id="@+id/txt_3"
-        android:textSize="@dimen/text_size"
-        android:textColor="@color/LightBlue"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="I'm Sorry!"
-        android:id="@+id/txt_4"
-        android:layout_alignTop="@+id/txt_3"
-        android:layout_alignLeft="@+id/txt_2"
-        android:textSize="@dimen/text_size"
-        android:textColor="@color/LightBlue"/>
+        <TextView
+            android:id="@+id/txt_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:background="@drawable/draggles_back"
+            android:text="Decide on your e-card to match the situation.Preview the cards and select the best."/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Congratulations"
-        android:layout_below="@+id/txt_3"
-        android:id="@+id/txt_5"
-        android:textSize="@dimen/text_size"
-        android:textColor="@color/LightBlue"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Happy New Year!"
-        android:id="@+id/txt_6"
-        android:layout_alignTop="@+id/txt_1"
-        android:layout_alignRight="@+id/txt_2"
-        android:layout_alignEnd="@+id/ans_3"
-        android:textSize="@dimen/text_size"
-        android:textColor="@color/LightBlue"/>
-</RelativeLayout>
+        <TextView
+            android:id="@+id/txt_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:background="@drawable/draggles_back"
+            android:text="Select the option and preview your entire e-card.'Edit' the card if you have any mistakes."/>
+
+        <TextView
+            android:id="@+id/txt_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:background="@drawable/draggles_back"
+            android:text="Send your e-card after sending up the date."/>
+
+        <TextView
+            android:id="@+id/txt_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:background="@drawable/draggles_back"
+            android:text="Choose an e-card company.There are many companies including 123 greetings,yahoo,hallmark etc."/>
+
+        <TextView
+            android:id="@+id/txt_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:background="@drawable/draggles_back"
+            android:text="Select the option to receive a notice when the recipients open the cards."/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/reset_btn1"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/tab_pera"
+            android:layout_marginTop="@dimen/tab_pera"
+            android:background="@color/ColorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Select the suitable situation for the following e-card."
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_size_heading"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_3"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/less_21_c"
+            android:layout_gravity="center" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/grp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_1"
+                android:text="Happy Married life!"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_2"
+                android:text="Happy new Year!"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_3"
+                android:text="Happy B'day!"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_4"
+                android:text="I'm Sorry!"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_5"
+                android:text="Congratulations!"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_6"
+                android:text="Merry Christmas!"/>
+        </RadioGroup>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/reset_btn"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+</ScrollView>

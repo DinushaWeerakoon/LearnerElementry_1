@@ -6,9 +6,11 @@
     <color name="ColorLogin">#C5E1A5</color>
     <color name="ColorAccent">#FF4081</color>
     <color name="ColorErr">#FF0000</color>
-    <color name="ColorDefault">#000000</color>
+    <color name="ColorBlack">#000000</color>
     <color name="Yellow">#ffff00</color>
    <color name="LightBlue">#1E90FF</color>
+    <color name="ColorAmber600">#FFB300</color>
+    <color name="White">#FFFFFF</color>
 
 </resources>
 

@@ -22,7 +22,7 @@ public class Lesson18C extends Fragment {
         final View view =inflater.inflate(R.layout.fr_less_18_c, container, false);
 
         TextView answ_1,answ_2,answ_3,answ_4, answ_5, blank_1,blank_2, blank_3,blank_4,blank_5;
-        final DragAndDrop DragAndDropAns =new DragAndDrop();
+        final Processor DragAndDropAns =new Processor();
 
         // views to drag
         answ_1= (TextView) view.findViewById(R.id.ans_1);

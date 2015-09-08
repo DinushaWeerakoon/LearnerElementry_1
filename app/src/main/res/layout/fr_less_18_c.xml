@@ -2,21 +2,21 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin">
 
 <LinearLayout
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp">
+    android:padding="10dp">
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="5dp"
-        android:textSize="@dimen/text_size"
+        android:textSize="@dimen/text_size_heading"
         android:layout_marginTop="5dp"
-        android:textStyle="bold"
         android:text="Complete the following notice by dragging the correct option to the blank."/>
 
 
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="@dimen/text_size_heading"
+        android:textSize="@dimen/text_size"
         android:id="@+id/less_topic_1"
         android:text="SRI LANKA ELECTRICITY BOARD"
         android:layout_gravity="center"/>
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="@dimen/text_size_heading"
+        android:textSize="@dimen/text_size"
         android:id="@+id/less_topic_3"
         android:text="ANURADHAPURA"
         android:layout_gravity="center"/>
@@ -42,10 +42,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="@dimen/text_size_heading"
+        android:textSize="@dimen/text_size"
         android:id="@+id/less_topic_2"
         android:text="POWER OUTAGE NOTICE"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -131,36 +132,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_size"
-        android:text="Deputy General Manager." />
+        android:text="Deputy General Manager."
+        android:layout_marginBottom="10dp"/>
 
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <TextView
-
-        android:text="starting at 8.00 a.m."
-        android:textSize="@dimen/text_size"
-        android:id="@+id/ans_1"
-        android:layout_marginTop="10dp"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/ans_2"
-        android:layout_alignStart="@+id/ans_2"
-        android:textColor="@color/LightBlue"/>
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <TextView
+
+            android:text="starting at 8.00 a.m."
+            android:textSize="@dimen/text_size"
+            android:id="@+id/ans_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ColorExample"/>
+
+        <TextView
+            android:text="electrical system"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/ans_4"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ColorExample" />
+
+    </LinearLayout>
+
 
     <TextView
         android:text="Distribution and Maintenance"
         android:textSize="@dimen/text_size"
         android:id="@+id/ans_2"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="0dp"
         android:layout_below="@+id/ans_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/LightBlue"/>
+        android:textColor="@color/ColorExample"/>
 
     <TextView
         android:text="understanding and cooperation"
@@ -171,20 +183,9 @@
         android:layout_below="@+id/ans_2"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:textColor="@color/LightBlue"/>
+        android:textColor="@color/ColorExample"/>
 
-    <TextView
-        android:text="electrical system"
-        android:textSize="@dimen/text_size"
-        android:id="@+id/ans_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/LightBlue"
-        android:layout_above="@+id/ans_2"
-        android:layout_toRightOf="@+id/ans_5"
-        android:layout_toEndOf="@+id/ans_5"
-        android:layout_marginLeft="27dp"
-        android:layout_marginStart="27dp" />
+
     <TextView
         android:text="the 23rd January 2012"
         android:textSize="@dimen/text_size"
@@ -194,10 +195,17 @@
         android:layout_below="@+id/ans_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/LightBlue"
+        android:textColor="@color/ColorExample"
         />
 
-</RelativeLayout>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/reset_btn"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
 

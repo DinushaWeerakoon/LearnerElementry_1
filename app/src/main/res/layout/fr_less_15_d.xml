@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/qst_1"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="1. Biuld up a simple poem called 'A Captain Bold' using the sentences given by dragging and dropping."/>
+
+
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:text="My men will lash me to the wheel."/>
+
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:text="And when the thunder starts to peal."/>
+
+
+        <TextView
+            android:id="@+id/txt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:text="I'll keep good watch by day and night."/>
+
+
+        <TextView
+            android:id="@+id/txt_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:text="When I'm a man I want to be."/>
+
+        <TextView
+            android:id="@+id/txt_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:text="I'll wear a suit of blue and gold,"/>
+
+        <TextView
+            android:id="@+id/txt_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:text="The captain of a ship at sea."/>
+
+        <TextView
+            android:id="@+id/txt_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:text="In case an iceberg comes in sight."/>
+
+        <TextView
+            android:id="@+id/txt_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:text="My men wii all be brave and bold."/>
 
 </LinearLayout>
+    </ScrollView>
