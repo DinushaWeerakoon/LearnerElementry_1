@@ -7,7 +7,8 @@
     <color name="ColorAccent">#FF4081</color>
     <color name="ColorErr">#FF0000</color>
     <color name="ColorDefault">#000000</color>
+    <color name="ColorBlack">#000000</color>
     <color name="Yellow">#ffff00</color>
+    <color name="White">#ffffff</color>
 
 </resources>
-
