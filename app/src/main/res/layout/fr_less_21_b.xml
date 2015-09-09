@@ -11,7 +11,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size_heading"
+            android:textSize="@dimen/text_size"
             android:id="@+id/qst_1"
             android:layout_marginBottom="10dp"
             android:text="1. Instructions of sending an e-card are given below.Make the steps in correct order by dragging and dropping."/>
@@ -21,7 +21,7 @@
             android:id="@+id/txt_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/text_drag"
             android:layout_margin="5dp"
             android:text="Include your email recipients."
             android:background="@drawable/draggles_back"/>
@@ -31,7 +31,7 @@
             android:id="@+id/txt_2"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/text_drag"
             android:layout_margin="5dp"
             android:background="@drawable/draggles_back"
             android:text="Type and add a personal note to your card.Remember,it should be short."/>
@@ -41,7 +41,7 @@
             android:id="@+id/txt_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/text_drag"
             android:layout_margin="5dp"
             android:background="@drawable/draggles_back"
             android:text="Decide on your e-card to match the situation.Preview the cards and select the best."/>
@@ -51,7 +51,7 @@
             android:id="@+id/txt_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/text_drag"
             android:layout_margin="5dp"
             android:background="@drawable/draggles_back"
             android:text="Select the option and preview your entire e-card.'Edit' the card if you have any mistakes."/>
@@ -60,7 +60,7 @@
             android:id="@+id/txt_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/text_drag"
             android:layout_margin="5dp"
             android:background="@drawable/draggles_back"
             android:text="Send your e-card after sending up the date."/>
@@ -69,7 +69,7 @@
             android:id="@+id/txt_6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/text_drag"
             android:layout_margin="5dp"
             android:background="@drawable/draggles_back"
             android:text="Choose an e-card company.There are many companies including 123 greetings,yahoo,hallmark etc."/>
@@ -78,7 +78,7 @@
             android:id="@+id/txt_7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size"
+            android:textSize="@dimen/text_drag"
             android:layout_margin="5dp"
             android:background="@drawable/draggles_back"
             android:text="Select the option to receive a notice when the recipients open the cards."/>
@@ -122,35 +122,41 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_1"
-                android:text="Happy Married life!"/>
+                android:text="Happy Married life!"
+                android:textSize="@dimen/text_size"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_2"
-                android:text="Happy new Year!"/>
+                android:text="Happy new Year!"
+                android:textSize="@dimen/text_size"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_3"
-                android:text="Happy B'day!"/>
+                android:text="Happy B'day!"
+                android:textSize="@dimen/text_size"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_4"
-                android:text="I'm Sorry!"/>
+                android:text="I'm Sorry!"
+                android:textSize="@dimen/text_size"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_5"
-                android:text="Congratulations!"/>
+                android:text="Congratulations!"
+                android:textSize="@dimen/text_size"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_6"
-                android:text="Merry Christmas!"/>
+                android:text="Merry Christmas!"
+                android:textSize="@dimen/text_size"/>
         </RadioGroup>
 
         <Button

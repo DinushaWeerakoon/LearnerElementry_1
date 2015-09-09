@@ -65,7 +65,7 @@ public class Lesson21B extends Fragment {
 
                 TextView dragged = (TextView) event.getLocalState();
 
-                radio.processDragOrder(v, dragEvent, dragged);
+                radio.processDragOrder(v, dragEvent, dragged,Oldcolor);
 
                 return true;
             }

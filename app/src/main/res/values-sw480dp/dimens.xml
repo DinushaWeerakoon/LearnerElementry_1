@@ -1,0 +1,41 @@
+<resources>
+
+    <dimen name="text_size">15dp</dimen>
+    <dimen name="text_size_small">12dp</dimen>
+    <dimen name="text_drag">13dp</dimen>
+    <dimen name="text_size_heading">20dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="draggable_margin">5dp</dimen>
+    <dimen name="draggable_margin_extra">10dp</dimen>
+
+    <dimen name="question_bottom">15dp</dimen>
+    <dimen name="question_top">15dp</dimen>
+
+    <dimen name="layout">15dp</dimen>
+
+    <dimen name="draggable_width">80dp</dimen>
+    <dimen name="draggable_width_medium">90dp</dimen>
+    <dimen name="draggable_width_extra">100dp</dimen>
+
+    <dimen name="writable_width_small">75dp</dimen>
+    <dimen name="writable_width">100dp</dimen>
+    <dimen name="writable_width_extra">120dp</dimen>
+    <dimen name="writable_width_ex_extra">260dp</dimen>
+
+    <dimen name="all">5dp</dimen>
+
+    <dimen name="video_height">200dp</dimen>
+    <dimen name="recycler_width">280dp</dimen>
+
+    <dimen name="tab_heading">20dp</dimen>
+    <dimen name="tab_pera">10dp</dimen>
+    <dimen name="tab_pera_left">10dp</dimen>
+    <dimen name="image_gap_top">20dp</dimen>
+    <dimen name="image_gap_bottom">20dp</dimen>
+
+
+</resources>

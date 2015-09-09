@@ -65,7 +65,7 @@ public class Lesson19B extends Fragment {
 
                 TextView dragged = (TextView) event.getLocalState();
 
-                dragAndDrop.processDragOrder(v, dragEvent, dragged);
+                dragAndDrop.processDragOrder(v, dragEvent, dragged,Oldcolor);
 
                 return true;
             }

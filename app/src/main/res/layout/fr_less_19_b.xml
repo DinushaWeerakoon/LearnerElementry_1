@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text_size_heading"
+        android:textSize="@dimen/text_size"
         android:id="@+id/qst_1"
         android:text="Read the following lines carefully and put them in order to get a meaningful verse without twisting your tongue."/>
 
@@ -20,7 +20,7 @@
                 android:id="@+id/txt_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size"
+                android:textSize="@dimen/text_drag"
                 android:layout_margin="5dp"
                 android:text="There's a branch on the log in the hole in the bottom of the sea."
                 android:background="@drawable/draggles_back"/>
@@ -30,7 +30,7 @@
                 android:id="@+id/txt_2"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:textSize="@dimen/text_size"
+                android:textSize="@dimen/text_drag"
                 android:layout_margin="5dp"
                 android:text="There's a frog on the bump on the branch on the log in the hole in the bottom of the sea."
                 android:background="@drawable/draggles_back"/>
@@ -40,7 +40,7 @@
                 android:id="@+id/txt_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size"
+                android:textSize="@dimen/text_drag"
                 android:layout_margin="5dp"
                 android:text="There's a hole in the bottom of the sea."
                 android:background="@drawable/draggles_back"/>
@@ -50,7 +50,7 @@
                 android:id="@+id/txt_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size"
+                android:textSize="@dimen/text_drag"
                 android:layout_margin="5dp"
                 android:background="@drawable/draggles_back"
                 android:text="There's a speck on the tail on the frog on the bump on the branch on the log in the hole in the bottom of the sea."/>
@@ -59,7 +59,7 @@
                 android:id="@+id/txt_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size"
+                android:textSize="@dimen/text_drag"
                 android:layout_margin="5dp"
                 android:background="@drawable/draggles_back"
                 android:text="There's a log in the hole in the bottom of the sea."/>
@@ -68,7 +68,7 @@
                 android:id="@+id/txt_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size"
+                android:textSize="@dimen/text_drag"
                 android:layout_margin="5dp"
                 android:background="@drawable/draggles_back"
                 android:text="There's fleck on the speck on the tail on the frog on the bump on the brach on the log in the hole in the bottom of the sea."/>
@@ -78,7 +78,7 @@
                 android:id="@+id/txt_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size"
+                android:textSize="@dimen/text_drag"
                 android:layout_margin="5dp"
                 android:background="@drawable/draggles_back"
                 android:text="There's a bump on the branch on the log in the hole in the bottom of the sea."/>
@@ -87,7 +87,7 @@
                 android:id="@+id/txt_8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size"
+                android:textSize="@dimen/text_drag"
                 android:layout_margin="5dp"
                 android:background="@drawable/draggles_back"
                 android:text="There's a tail on the frog on the bump on the branch on the log in the hole in the bottom of the sea."/>
