@@ -1,6 +1,617 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txt08c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:text="Activities"
+        android:textSize="@dimen/text_size_heading" />
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewFlipper"
+        android:layout_gravity="right" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="1. Given below is  a discription of Radha's kitchen. Click on the countable nouns."
+                android:textSize="@dimen/text_size"
+            ></TextView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp">
+
+
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="There "
+
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="is "
+
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lot "
+                    android:textSize="@dimen/text_size"/>
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="of "
+                    android:textSize="@dimen/text_size" />
+                <TextView
+                    android:id="@+id/t6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rice "
+                    android:textSize="@dimen/text_size" />
+                <TextView
+                    android:id="@+id/t7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in "
+                    android:textSize="@dimen/text_size" />
+
+
+                <TextView
+                    android:id="@+id/t8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Radha's "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t9_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kitchen, "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="near "
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+                <TextView
+                    android:id="@+id/t11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="her "
+                    android:textSize="@dimen/text_size" />
+
+
+
+                <TextView
+                    android:id="@+id/t12_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gas stove. "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Radha&apos;s "
+                    android:textSize="@dimen/text_size" />
+
+
+
+
+                <TextView
+                    android:id="@+id/t14_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gas stove "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="has "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t16_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 burners. "
+                    android:textSize="@dimen/text_size" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+            <TextView
+                    android:id="@+id/t17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On "
+                    android:textSize="@dimen/text_size" />
+
+
+
+                <TextView
+                    android:id="@+id/t18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Radha&apos;s "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t19_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kitchen-table "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="there "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="are "
+                    android:textSize="@dimen/text_size"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/t22_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 eggs "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="and "
+                    android:textSize="@dimen/text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/t24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lot "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="of "
+                    android:textSize="@dimen/text_size" />
+
+
+                <TextView
+                    android:id="@+id/t27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="chicken. "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="She "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="has "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="to "
+                    android:textSize="@dimen/text_size" />
+
+
+
+                <TextView
+                    android:id="@+id/t31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="keep "
+                    android:textSize="@dimen/text_size" />
+
+
+
+            <TextView
+                    android:id="@+id/t32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="that "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="meat "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in "
+                    android:textSize="@dimen/text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+            <TextView
+                    android:id="@+id/t35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="the "
+                    android:textSize="@dimen/text_size"/>
+
+
+
+                <TextView
+                    android:id="@+id/t36_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fridge. "
+                    android:textSize="@dimen/text_size"/>
+
+
+                <TextView
+                    android:id="@+id/t37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="There "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="is "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a "
+                    android:textSize="@dimen/text_size"/>
+
+                <TextView
+                    android:id="@+id/t40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="little "
+                    android:textSize="@dimen/text_size"/>
+
+
+
+                <TextView
+                    android:id="@+id/t41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="milk "
+                    android:textSize="@dimen/text_size" />
+
+
+            <TextView
+                    android:id="@+id/t42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in "
+                    android:textSize="@dimen/text_size"/>
+
+                <TextView
+                    android:id="@+id/t43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="the "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t44_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jar. "
+                    android:textSize="@dimen/text_size"/>
+
+
+
+
+            <TextView
+                    android:id="@+id/t45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Some "
+                    android:textSize="@dimen/text_size"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            <TextView
+                    android:id="@+id/t46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jam "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="is "
+                    android:textSize="@dimen/text_size" />
+
+
+
+
+                <TextView
+                    android:id="@+id/t48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="waiting "
+                    android:textSize="@dimen/text_size"/>
+
+
+
+                <TextView
+                    android:id="@+id/t49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="on "
+                    android:textSize="@dimen/text_size"/>
+
+                <TextView
+                    android:id="@+id/t50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="the "
+                    android:textSize="@dimen/text_size"/>
+
+
+                <TextView
+                    android:id="@+id/t51_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="coffee table. "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Near "
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/t53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="it, "
+                    android:textSize="@dimen/text_size" />
+
+
+
+                <TextView
+                    android:id="@+id/t54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="you "
+                    android:textSize="@dimen/text_size" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+            <TextView
+                    android:id="@+id/t55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="can "
+                    android:textSize="@dimen/text_size"/>
+
+                <TextView
+                    android:id="@+id/t56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="see "
+                    android:textSize="@dimen/text_size"/>
+
+                <TextView
+                    android:id="@+id/t57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Some "
+                    android:textSize="@dimen/text_size"/>
+
+
+
+                <TextView
+                    android:id="@+id/t58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bread. "
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/tab_pera"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="2. Listen to the story of Alibaba. With the help of quantifiers you hear, guess the quantity. Select the correct answer for the following questions. "
+                android:textSize="@dimen/text_size"></TextView>
+
+            <TextView
+                android:id="@+id/txtLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/tab_pera"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="a) Alibaba's brother had "
+                android:textSize="@dimen/text_size"></TextView>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a big amount of money"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/radioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="an average amount of money"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/radioButton2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="almost no money"
+                android:id="@+id/radioButton3" />
+
+            <TextView
+                android:id="@+id/txtLine5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/tab_pera"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="b) The thieves filled "
+                android:textSize="@dimen/text_size"></TextView>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a large number of bags"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/radioButton5" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a small number of bags"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/radioButton6" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:layout_height="wrap_content"
+                android:text="no bags"
+                android:id="@+id/radioButton7" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </LinearLayout>

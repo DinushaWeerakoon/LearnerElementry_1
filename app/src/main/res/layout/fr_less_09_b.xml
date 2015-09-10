@@ -1,6 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="1. Create a meaningful word by dragging and dropping a prefix for the given root word."
+                android:textSize="@dimen/text_size" />
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:paddingLeft="@dimen/tab_pera"
+               android:paddingTop="@dimen/tab_pera">
+
+
+               <TextView
+                   android:id="@+id/txtLine21"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingBottom="@dimen/tab_pera"
+                   android:text="............"
+                   android:textSize="@dimen/text_size" />
+
+
+            <TextView
+                android:id="@+id/txtLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="appoint."
+                android:textSize="@dimen/text_size" />
+
+
+           </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/tab_pera"
+            android:paddingBottom="@dimen/tab_pera">
+
+            <TextView
+                android:id="@+id/txtLine31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="............"
+                android:textSize="@dimen/text_size" />
+
+
+            <TextView
+                android:id="@+id/txtLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="regular."
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/tab_pera"
+                android:paddingBottom="@dimen/tab_pera"
+                >
+
+            <TextView
+                android:id="@+id/txtLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="dis"
+                android:textSize="@dimen/text_size"
+                android:background="#6CC417"
+                android:paddingRight="@dimen/tab_heading"/>
+
+
+                <TextView
+                    android:id="@+id/txtLine5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/tab_pera"
+                    android:text="im"
+                    android:textSize="@dimen/text_size"
+                    android:background="#6CC417"
+                    android:paddingRight="@dimen/tab_heading"/>
+
+
+                <TextView
+                    android:id="@+id/txtLine6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/tab_pera"
+                    android:text="re"
+                    android:textSize="@dimen/text_size"
+                    android:background="#6CC417"
+                    android:paddingRight="@dimen/tab_heading"/>
+
+                <TextView
+                    android:id="@+id/txtLine7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/tab_pera"
+                    android:text="ir"
+                    android:textSize="@dimen/text_size"
+                    android:background="#6CC417"
+                    android:paddingRight="@dimen/tab_heading"/>
+
+                <TextView
+                    android:id="@+id/txtLine8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/tab_pera"
+                    android:text="mis"
+                    android:background="#6CC417"
+                    android:textSize="@dimen/text_size"
+                    android:paddingRight="@dimen/tab_heading"/>
+
+                <TextView
+                    android:id="@+id/txtLine9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/tab_pera"
+                    android:text="non"
+                    android:textSize="@dimen/text_size"
+                    android:background="#6CC417"
+                    android:paddingRight="@dimen/tab_heading"/>
+
+
+                <TextView
+                    android:id="@+id/txtLine10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/tab_pera"
+                    android:background="#6CC417"
+                    android:text="ill"
+                    android:textSize="@dimen/text_size"
+                    android:paddingRight="@dimen/tab_heading"/>
+
+                <TextView
+                    android:id="@+id/txtLine11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/tab_pera"
+                    android:background="#6CC417"
+                    android:text="un"
+                    android:textSize="@dimen/text_size" />
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:id="@+id/button"
+                android:textSize="@dimen/tab_heading"
+                android:paddingBottom="@dimen/tab_pera"/>
+
+            <TextView
+                android:id="@+id/txtLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/tab_pera"
+                android:paddingBottom="@dimen/tab_pera"
+                android:text="2. Discuss the impossible things for you using as many as prefixes and suffixes in the ''Impossible things for you'' forum. You will be getting suggestions from others to make them possible. You also can give your suggestions for the impossible situations of the others."
+                android:textSize="@dimen/text_size" />
+
+
+            3.	Discuss the impossible things for you "using as many as prefixes and suffixes" in the "Impossible things for you" forum. You will be getting suggestions from others to make them possible. You also can give your suggestions for the impossible situations of the others.
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </LinearLayout>

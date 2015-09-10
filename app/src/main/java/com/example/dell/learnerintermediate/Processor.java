@@ -56,25 +56,30 @@ public class Processor {
 
                 TextView target = (TextView) v;
                 String temp=target.getText().toString();
-                Log.v("target",temp);
-                target.setText(dragged.getText());
+                Log.v("target", temp);
 
-                if (target.getText().equals(target.getTag())) {
-                    target.setTextColor(Color.GREEN);
-                    target.setBackgroundResource(R.drawable.dragged_back);
-                    dragged.setText(temp);
-                    if(dragged.getText().equals(dragged.getTag())){
-                        dragged.setTextColor(Color.GREEN);
-                        dragged.setBackgroundResource(R.drawable.dragged_back);
-                    }
+
+                if(!target.getTag().equals("done")) {
+                    target.setText(dragged.getText());
+
+                    if (target.getText().equals(target.getTag())) {
+                        target.setTextColor(Color.GREEN);
+                        target.setTag("done");
+                        //target.setBackgroundResource(R.drawable.dragged_back);
+                        dragged.setText(temp);
+                        if (dragged.getText().equals(dragged.getTag())) {
+                            dragged.setTextColor(Color.GREEN);
+                            dragged.setTag("done");
+                            //dragged.setBackgroundResource(R.drawable.dragged_back);
+                        }
 
                     else {
                         dragged.setTextColor(Oldcolor);
-                        dragged.setBackgroundResource(R.drawable.draggles_back);
+                        //dragged.setBackgroundResource(R.drawable.draggles_back);
                     }
 
 
-                } else {
+                    } /*else {
                     target.setTextColor(Color.RED);
                     target.setBackgroundResource(R.drawable.dragged_back);
                     dragged.setText(temp);
@@ -87,8 +92,8 @@ public class Processor {
                         dragged.setTextColor(Oldcolor);
                         dragged.setBackgroundResource(R.drawable.draggles_back);
                     }
+                }*/
                 }
-
                 break;
         }
 
