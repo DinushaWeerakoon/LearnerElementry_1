@@ -70,7 +70,7 @@ public class Processor {
 
                     else {
                         dragged.setTextColor(Oldcolor);
-                        //dragged.setBackgroundResource(R.drawable.draggles_back);
+                        dragged.setBackgroundResource(R.drawable.draggles_back);
                     }
 
 
@@ -85,7 +85,7 @@ public class Processor {
 
                     else {
                         dragged.setTextColor(Oldcolor);
-                        //dragged.setBackgroundResource(R.drawable.draggles_back);
+                        dragged.setBackgroundResource(R.drawable.draggles_back);
                     }
                 }
 

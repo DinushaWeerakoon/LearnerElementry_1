@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin">
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:text="Skim read the following paragraph and answer the questions."
+            android:id="@+id/qst"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/qst"
+            android:orientation="vertical"
+            android:background="@drawable/back">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="@string/less_16_01"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="Let us first look at the beneficial effects of television. It can increase our knowledge of the outside world; and there are high-quality programmes that help us understand many fields of study; science, medicine, the arts and so on. It also provides entertainment which is equally important for human well being. Furthermore, television benefits the very old people and the sick who may not be able to leave their homes. Language learners too, can improve their vocabulary and have daily language practice."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="There are, however, serious disadvantages with television. Long hours of watching can have an adverse effect on a person's phisical condition. Many people spend much of their free-time slouched in front of TV sets. As a result, they do not get enough physical exercise which is necessary for a healthy life. Further, watching television for long hours hinders the development of mind. It is well-known fact that the brain slows down when a person is watching television. Another disadvantage is that television often causes people to become dissatisfied with their lives. The reason for this, is that to many people, what they see in television: for instance, a tele - drama or an advertisement, become very real. People try to live something shown in the television and become depressed when they fail. Another danger in watching television is that some people cannot stop watching it and become addict to it. As a result they do not spend enough time on important areas of their lives, such as education, sports, reading, vising and entertaining with friends and family."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:text="We must be aware of all the dangers mentioned above. We can overcome these dangers by limiting ourselves to few interesting and educative programmes, if not, there will be more harm than good in watching television. "/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

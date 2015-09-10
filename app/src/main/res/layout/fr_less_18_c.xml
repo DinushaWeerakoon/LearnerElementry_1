@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
-            android:textSize="@dimen/text_size_small"
+            android:textSize="@dimen/text_drag"
             android:layout_marginTop="5dp"
             android:id="@+id/qst"
             android:text="Complete the following notice by dragging the correct option to the blank."/>
@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:layout_margin="5dp"
                 android:id="@+id/less_topic_1"
                 android:text="SRI LANKA ELECTRICITY BOARD"
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:id="@+id/less_topic_3"
                 android:text="ANURADHAPURA"
                 android:layout_gravity="center"/>
@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:id="@+id/less_topic_2"
                 android:text="POWER OUTAGE NOTICE"
                 android:layout_gravity="center"
@@ -60,18 +60,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:id="@+id/blnk_1"
                 android:layout_marginRight="5dp"
-                android:text="1............................................................................"/>
+                android:text="1....................................................................."/>
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:text="Unit of the SLEB will be perfoming required services of the">
@@ -80,16 +80,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small" android:id="@+id/blnk_2"
+                android:textSize="@dimen/text_drag" android:id="@+id/blnk_2"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:text="2................................................................................">
+                android:text="2.....................................................................">
             </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:text="of the 'Deyata Kirula' area in Oyamaduwa on ">
@@ -98,17 +98,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:id="@+id/blnk_3"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:text="3.............................................................................">
+                android:text="3.....................................................................">
             </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:text="In order to safely perform this service, power will be turned off for 5 hours">
@@ -117,16 +117,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small" android:id="@+id/blnk_4"
+                android:textSize="@dimen/text_drag" android:id="@+id/blnk_4"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:text="4............................................................................. .">
+                android:text="4..................................................................... .">
             </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:text="The DMU will try to minimize any inconvenience related to this. Your ">
@@ -135,24 +135,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:id="@+id/blnk_5"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:text="5..........................................................................">
+                android:text="5.....................................................................">
             </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:layout_marginLeft="5dp"
                 android:text="is appreciated.">
             </TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:layout_marginLeft="5dp"
                 android:text="D.M.Gunasekara."
                 android:layout_marginTop="10dp"/>
@@ -160,7 +160,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:text="Deputy General Manager."
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"/>
@@ -177,7 +177,7 @@
             <TextView
 
                 android:text="starting at 8.00 a.m."
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:id="@+id/ans_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -186,7 +186,7 @@
 
             <TextView
                 android:text="electrical system"
-                android:textSize="@dimen/text_size_small"
+                android:textSize="@dimen/text_drag"
                 android:id="@+id/ans_4"
                 android:layout_marginLeft="25dp"
                 android:layout_width="wrap_content"
@@ -198,7 +198,7 @@
 
         <TextView
             android:text="Distribution and Maintenance"
-            android:textSize="@dimen/text_size_small"
+            android:textSize="@dimen/text_drag"
             android:id="@+id/ans_2"
             android:layout_marginTop="5dp"
             android:layout_below="@+id/layout2"
@@ -209,7 +209,7 @@
 
         <TextView
             android:text="understanding and cooperation"
-            android:textSize="@dimen/text_size_small"
+            android:textSize="@dimen/text_drag"
             android:id="@+id/ans_3"
             android:layout_marginTop="5dp"
             android:layout_below="@+id/ans_2"
@@ -221,7 +221,7 @@
 
         <TextView
             android:text="the 23rd January 2012"
-            android:textSize="@dimen/text_size_small"
+            android:textSize="@dimen/text_drag"
             android:id="@+id/ans_5"
             android:layout_marginTop="5dp"
             android:layout_below="@+id/ans_3"
@@ -236,7 +236,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reset"
-            android:textSize="@dimen/text_size_small"
+            android:textSize="@dimen/text_drag"
             android:id="@+id/reset_btn"
             android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"

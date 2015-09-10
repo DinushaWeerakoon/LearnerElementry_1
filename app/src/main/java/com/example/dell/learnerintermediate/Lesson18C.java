@@ -1,6 +1,7 @@
 package com.example.dell.learnerintermediate;
 
 import android.content.ClipData;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -21,8 +23,10 @@ public class Lesson18C extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view =inflater.inflate(R.layout.fr_less_18_c, container, false);
 
-        TextView answ_1,answ_2,answ_3,answ_4, answ_5, blank_1,blank_2, blank_3,blank_4,blank_5;
+        final TextView answ_1,answ_2,answ_3,answ_4, answ_5, blank_1,blank_2, blank_3,blank_4,blank_5;
         final Processor DragAndDropAns =new Processor();
+
+        Button reset= (Button) view.findViewById(R.id.reset_btn);
 
         // views to drag
         answ_1= (TextView) view.findViewById(R.id.ans_1);
@@ -30,6 +34,7 @@ public class Lesson18C extends Fragment {
         answ_3= (TextView) view.findViewById(R.id.ans_3);
         answ_4= (TextView) view.findViewById(R.id.ans_4);
         answ_5= (TextView) view.findViewById(R.id.ans_5);
+        final ColorStateList Oldcolor=answ_1.getTextColors();
 
         //views to drop onto
         blank_1=(TextView) view.findViewById(R.id.blnk_1);
@@ -64,6 +69,23 @@ public class Lesson18C extends Fragment {
                 DragAndDropAns.processDrag(v, dragEvent, dragged);
 
                 return true;
+            }
+        };
+
+        View.OnClickListener resetLisner= new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                blank_1.setText(".....................................................................");
+                blank_2.setText(".....................................................................");
+                blank_3.setText(".....................................................................");
+                blank_4.setText(".....................................................................");
+                blank_5.setText(".....................................................................");
+
+                blank_1.setTextColor(Oldcolor);
+                blank_2.setTextColor(Oldcolor);
+                blank_3.setTextColor(Oldcolor);
+                blank_4.setTextColor(Oldcolor);
+                blank_5.setTextColor(Oldcolor);
             }
         };
 
