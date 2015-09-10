@@ -12,6 +12,7 @@
     <color name="ColorAmber600">#FFB300</color>
     <color name="White">#FFFFFF</color>
     <color name="DragBox">#CDDC39</color>
+    <color name="ColorDefault">#000000</color>
+
 
 </resources>
-

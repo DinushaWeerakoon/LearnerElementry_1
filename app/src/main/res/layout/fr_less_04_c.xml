@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,7 +20,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="1. Select the appropriate verb form to complete the sentence."
         android:id="@+id/q1"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="left"
         android:paddingTop="20dp"
         android:paddingBottom="30dp"
         />
@@ -31,8 +37,8 @@
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/textView1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg"
         android:layout_above="@+id/a"
         android:orientation="vertical"
         android:id="@+id/radio">
@@ -53,18 +59,93 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="will come"
-            android:onClick="onRadioButtonClicked3"/>
+            android:onClick="onRadioButtonClicked3"
+            android:layout_marginBottom="20dp"/>
 
     </RadioGroup>
 
-    <TextView
-        android:paddingTop="50dp"
-        android:layout_width="match_parent"
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text=""
+        android:text="Reset"
+        android:id="@+id/reset"
+        android:layout_gravity="left" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/tab_pera"
+        android:layout_marginTop="30dp"
+        android:background="@color/ColorAccent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2. Create a question by arranging the words in proper order."
+        android:id="@+id/q2"
+        android:layout_gravity="left"
+        android:paddingTop="40dp"
         android:paddingBottom="30dp"
-        android:id="@+id/cor"
         />
 
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="party"
+        android:id="@+id/button1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="what"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wear"
+        android:id="@+id/button3"
+        android:layout_gravity="right" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the"
+        android:id="@+id/button4"
+        android:layout_gravity="center_horizontal" />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="will"
+        android:id="@+id/button5"
+        android:layout_gravity="left" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to"
+        android:id="@+id/button6"
+        android:layout_gravity="right" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="you"
+        android:id="@+id/button7"
+        android:layout_gravity="right" />
+
+     </LinearLayout>
+
 </LinearLayout>
+
+</ScrollView>

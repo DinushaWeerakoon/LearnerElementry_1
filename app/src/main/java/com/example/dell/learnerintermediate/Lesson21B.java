@@ -27,7 +27,6 @@ public class Lesson21B extends Fragment {
 
         final Processor radio= new Processor();
 
-
         final TextView txt1= (TextView) view.findViewById(R.id.txt_1);
         final TextView txt2= (TextView) view.findViewById(R.id.txt_2);
         final TextView txt3= (TextView) view.findViewById(R.id.txt_3);
@@ -37,6 +36,7 @@ public class Lesson21B extends Fragment {
         final TextView txt7= (TextView) view.findViewById(R.id.txt_7);
 
         final ColorStateList Oldcolor=txt1.getTextColors();
+
 
         txt1.setTag("Choose an e-card company.There are many companies including 123 greetings,yahoo,hallmark etc.");
         txt2.setTag("Decide on your e-card to match the situation.Preview the cards and select the best.");
@@ -64,6 +64,7 @@ public class Lesson21B extends Fragment {
                 int dragEvent = event.getAction();
 
                 TextView dragged = (TextView) event.getLocalState();
+
 
                 radio.processDragOrder(v, dragEvent, dragged,Oldcolor);
 
@@ -156,6 +157,7 @@ public class Lesson21B extends Fragment {
         rb5.setOnClickListener(radiolistner);
         rb6.setOnClickListener(radiolistner);
         reset2.setOnClickListener(resetlisnr2);
+
         reset1.setOnClickListener(resetLisner1);
         return view;
 
