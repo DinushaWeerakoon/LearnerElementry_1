@@ -82,19 +82,6 @@ public class Lesson04C extends Fragment {
             }
         }; */
 
-        Button reset= (Button) view.findViewById(R.id.reset);
-        View.OnClickListener resetListener= new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rb1.setTextColor(Color.BLACK);
-                rb2.setTextColor(Color.BLACK);
-                rb3.setTextColor(Color.BLACK);
-                RadioGroup rg= (RadioGroup)view.findViewById(R.id.radio);
-                rg.clearCheck();
-
-            }
-        };
-
 
         final Button btn1= (Button) view.findViewById(R.id.button1);
         final Button btn2= (Button) view.findViewById(R.id.button2);
@@ -152,6 +139,21 @@ public class Lesson04C extends Fragment {
         btn5.setOnDragListener(ChoiceDragLisner);
         btn6.setOnDragListener(ChoiceDragLisner);
         btn7.setOnDragListener(ChoiceDragLisner);
+
+
+        Button reset= (Button) view.findViewById(R.id.reset);
+        View.OnClickListener resetListener= new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rb1.setTextColor(Color.BLACK);
+                rb2.setTextColor(Color.BLACK);
+                rb3.setTextColor(Color.BLACK);
+                RadioGroup rg= (RadioGroup)view.findViewById(R.id.radio);
+                rg.clearCheck();
+
+            }
+        };
+
 
 
         Button reset2= (Button) view.findViewById(R.id.reset2);
