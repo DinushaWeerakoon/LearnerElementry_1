@@ -16,6 +16,8 @@ import android.widget.TextView;
  * Created by ucsc on 9/3/2015.
  */
 public class Processor {
+
+    public int tag=1;
     public void processDrag(View v, int dragEvent, TextView dragged){
 
         switch (dragEvent){
@@ -58,46 +60,35 @@ public class Processor {
                 String temp=target.getText().toString();
                 Log.v("target", temp);
 
-
                 if(!target.getTag().equals("done")) {
                     target.setText(dragged.getText());
 
                     if (target.getText().equals(target.getTag())) {
                         target.setTextColor(Color.GREEN);
                         target.setTag("done");
-                        //target.setBackgroundResource(R.drawable.dragged_back);
                         dragged.setText(temp);
                         if (dragged.getText().equals(dragged.getTag())) {
                             dragged.setTextColor(Color.GREEN);
                             dragged.setTag("done");
-                            //dragged.setBackgroundResource(R.drawable.dragged_back);
                         }
 
-                    else {
-                        dragged.setTextColor(Oldcolor);
-                        //dragged.setBackgroundResource(R.drawable.draggles_back);
-                    }
+                        else {
+                            dragged.setTextColor(Oldcolor);
+                        }
 
 
-                    } /*else {
-                    target.setTextColor(Color.RED);
-                    target.setBackgroundResource(R.drawable.dragged_back);
-                    dragged.setText(temp);
-                    if(dragged.getText().equals(dragged.getTag())){
-                        dragged.setTextColor(Color.GREEN);
-                        dragged.setBackgroundResource(R.drawable.dragged_back);
+                    } else {
+                        String drag= target.getText().toString();
+                        target.setText(temp);
+                        dragged.setText(drag);
                     }
-
-                    else {
-                        dragged.setTextColor(Oldcolor);
-                        dragged.setBackgroundResource(R.drawable.draggles_back);
-                    }
-                }*/
-                }
+               }
                 break;
         }
 
     }
+
+
 
     // This method is used for button
     public void processClick(View v, EditText editAns) {
@@ -160,6 +151,7 @@ public class Processor {
 
         if (answer.getText().toString().equals(answer.getTag().toString())) {
             answer.setTextColor(Color.GREEN);
+            answer.setFocusable(false);
         } else {
             answer.setTextColor(Color.RED);
         }

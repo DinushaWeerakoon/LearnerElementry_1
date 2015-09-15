@@ -1,6 +1,274 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which is not a quality of a good team?"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/grp_1"
+            android:layout_margin="5dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Respect others"
+                android:id="@+id/ans_1_1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Communicate Constructively"
+                android:id="@+id/ans_1_2" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Win the argument"
+                android:id="@+id/ans_1_3" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Co-operate with others"
+                android:id="@+id/ans_1_4" />
+        </RadioGroup>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/reset_btn1"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qst2"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="10dp"
+            android:text="Fill in the blanks in order to form a word related to a team"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:id="@+id/layout1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="a.    "/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_a_1"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="u"/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_a_2"
+                android:layout_margin="2dp"/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_a_3"
+                android:layout_margin="2dp"/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_a_4"
+                android:layout_margin="2dp"/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_a_5"
+                android:layout_margin="2dp"/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_a_6"
+                android:layout_margin="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="l"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:id="@+id/layout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="b.    "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="R"/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_b_1"
+                android:layout_margin="2dp"/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_b_2"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="p"/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_b_3"
+                android:layout_margin="2dp"/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_b_4"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="t"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:id="@+id/layout3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="c.    "/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_c_1"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="i"/>
+
+
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_c_2"
+                android:layout_margin="2dp"/>
+
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_c_3"
+                android:layout_margin="2dp"/>
+
+            <EditText
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:inputType="text"
+                android:id="@+id/blnk_c_4"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="n"/>
+
+        </LinearLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/reset_btn2"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -47,13 +47,26 @@ public class Lesson15D extends Fragment {
         txt7.setTag("And when the thunder starts to peal.");
         txt8.setTag("My men will lash me to the wheel.");
 
+        /*txt1.setTag(8);
+        txt2.setTag(7);
+        txt3.setTag(5);
+        txt4.setTag(1);
+        txt5.setTag(3);
+        txt6.setTag(2);
+        txt7.setTag(6);
+        txt8.setTag(4);*/
+
+
         View.OnLongClickListener ChoiceTouchLisner =new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
                 ClipData data = ClipData.newPlainText("", "");
-                DragShadow dragShadow = new DragShadow(v);
+                View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
+                v.startDrag(data,shadowBuilder,v,0);
+                //return true;*/
+                //DragShadow dragShadow = new DragShadow(v);
 
-                v.startDrag(data,dragShadow,v,0);
+                //v.startDrag(data,dragShadow,v,0);
                 return false;
             }
         };
