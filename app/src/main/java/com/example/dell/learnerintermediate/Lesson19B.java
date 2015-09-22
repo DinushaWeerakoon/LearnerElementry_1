@@ -51,9 +51,11 @@ public class Lesson19B extends Fragment {
             @Override
             public boolean onLongClick(View v) {
                 ClipData data = ClipData.newPlainText("", "");
-                DragShadow dragShadow = new DragShadow(v);
+                View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
+                v.startDrag(data,shadowBuilder,v,0);
+                //DragShadow dragShadow = new DragShadow(v);
 
-                v.startDrag(data,dragShadow,v,0);
+                //v.startDrag(data,dragShadow,v,0);
                 return false;
             }
         };
@@ -82,6 +84,15 @@ public class Lesson19B extends Fragment {
                 txt6.setText("There's fleck on the speck on the tail on the frog on the bump on the brach on the log in the hole in the bottom of the sea.");
                 txt7.setText("There's a bump on the branch on the log in the hole in the bottom of the sea.");
                 txt8.setText("There's a tail on the frog on the bump on the branch on the log in the hole in the bottom of the sea.");
+
+                txt1.setTag("There's a hole in the bottom of the sea.");
+                txt2.setTag("There's a log in the hole in the bottom of the sea.");
+                txt3.setTag("There's a branch on the log in the hole in the bottom of the sea.");
+                txt4.setTag("There's a bump on the branch on the log in the hole in the bottom of the sea.");
+                txt5.setTag("There's a frog on the bump on the branch on the log in the hole in the bottom of the sea.");
+                txt6.setTag("There's a tail on the frog on the bump on the branch on the log in the hole in the bottom of the sea.");
+                txt7.setTag("There's a speck on the tail on the frog on the bump on the branch on the log in the hole in the bottom of the sea.");
+                txt8.setTag("There's fleck on the speck on the tail on the frog on the bump on the brach on the log in the hole in the bottom of the sea.");
 
                 txt1.setTextColor(Oldcolor);
                 txt2.setTextColor(Oldcolor);

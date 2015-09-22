@@ -34,11 +34,11 @@ public class Processor {
                     target.setText(dragged.getText());
 
                     if (target.getText().equals(target.getTag())) {
-                        target.setTextColor(Color.GREEN);
+                        target.setBackgroundColor(Color.GREEN);
                         target.setTag("done");
+                        dragged.setVisibility(View.INVISIBLE);
                     } else {
-                        target.setTextColor(Color.RED);
-                        target.setTag("done");
+                        target.setBackgroundColor(Color.RED);
                     }
                 }
                 break;
@@ -88,6 +88,20 @@ public class Processor {
 
     }
 
+    public void dragOrder(View v, int dragEvent, TextView dragged, ColorStateList Oldcolor){
+        switch (dragEvent){
+
+            case DragEvent.ACTION_DRAG_ENTERED:break;
+
+            case DragEvent.ACTION_DRAG_EXITED:break;
+
+            case DragEvent.ACTION_DROP:
+
+                TextView target = (TextView) v;
+                break;
+
+        }
+    }
 
 
     // This method is used for button
@@ -140,6 +154,16 @@ public class Processor {
         }
         else{
             optionSelected.setTextColor(Color.RED);
+        }
+
+    }
+
+    public void editTextAns(CharSequence answer, EditText e){
+        if (answer.toString().equals(e.getText().toString())) {
+            e.setTextColor(Color.GREEN);
+            e.setFocusable(false);
+        } else {
+            e.setTextColor(Color.RED);
         }
 
     }

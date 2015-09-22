@@ -23,7 +23,7 @@ import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 
-public class MainLearnerActivity extends ActionBarActivity implements View.OnClickListener{
+public class MainLearnerActivity extends ActionBarActivity {
 
     private static final String TAG_BTN_FAVOURITES = "favourites";
     private static final String TAG_BTN_COMMUNITY = "community";
@@ -359,10 +359,10 @@ public class MainLearnerActivity extends ActionBarActivity implements View.OnCli
         Drawer.setDrawerListener(mDrawerToggle); // Drawer Listener set to the Drawer toggle
         mDrawerToggle.syncState();               // Finally we set the drawer toggle sync State
 
-        buildFAB();
+        //buildFAB();
     }
 
-    private void buildFAB(){
+    /*private void buildFAB(){
 
         // Starts the content for FAB (Floating Action Button)
 
@@ -405,7 +405,7 @@ public class MainLearnerActivity extends ActionBarActivity implements View.OnCli
                 .attachTo(actionButton)
                 .build();
 
-    }
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -433,7 +433,7 @@ public class MainLearnerActivity extends ActionBarActivity implements View.OnCli
         viewPager.setCurrentItem(viewPager.getChildCount());
     }
 
-    @Override
+    /*@Override
     public void onClick(View v) {
 
         if(v.getTag().equals(TAG_BTN_ACTIVITIES)){
@@ -461,5 +461,5 @@ public class MainLearnerActivity extends ActionBarActivity implements View.OnCli
             }
         }
 
-    }
+    }*/
 }

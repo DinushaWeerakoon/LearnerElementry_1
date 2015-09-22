@@ -44,16 +44,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Within dark brackets- the origins"
+                android:textSize="@dimen/text_size"
                 android:id="@+id/ans_1_1" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Given in parentheses. Different Dictionaries uses different symbols."
+                android:textSize="@dimen/text_size"
                 android:id="@+id/ans_1_2" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Printed in dark, divided in to syllables."
+                android:textSize="@dimen/text_size"
                 android:id="@+id/ans_1_3" />
         </RadioGroup>
         <View
@@ -80,16 +83,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Words that have similar meaning"
+                android:textSize="@dimen/text_size"
                 android:id="@+id/ans_2_1" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Words closely related to the entry"
+                android:textSize="@dimen/text_size"
                 android:id="@+id/ans_2_2" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Within dark brackets- the origins"
+                android:textSize="@dimen/text_size"
                 android:id="@+id/ans_2_3" />
         </RadioGroup>
         <View
@@ -116,16 +122,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Given the dark brackets- the origins"
+                android:textSize="@dimen/text_size"
                 android:id="@+id/ans_3_1" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="In small capitals tells to turn to another entry"
+                android:textSize="@dimen/text_size"
                 android:id="@+id/ans_3_2" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="The definition of the word"
+                android:textSize="@dimen/text_size"
                 android:id="@+id/ans_3_3" />
         </RadioGroup>
 
@@ -136,7 +145,7 @@
             android:text="Reset"
             android:id="@+id/reset_btn"
             android:layout_marginBottom="10dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="right" />
 
     </LinearLayout>
 

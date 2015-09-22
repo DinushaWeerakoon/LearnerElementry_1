@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/tab_heading"
         android:text="Capitalization"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textSize="@dimen/text_size_heading" />
 
     <ImageButton
         android:id="@+id/playVideo"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="Rules regarding capitalization are important when writing formally or informally."
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                  />
 
 
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="Eg:"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 android:textColor="@color/ColorPrimaryDark"
                 />
 
@@ -73,7 +73,7 @@
                 android:text="•	Pronoun - Namal, Maduri
 \n•	Greeting - Hello, Good Morning
 \n•	Beginning of a sentence - This is my sister."
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 android:textColor="@color/ColorPrimaryDark"
                 />
 
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="The correct use of capitalization is important in writing. "
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 />
 
             <TextView
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="If you write “dear sir” it will show your ignorance and the lack of knowledge of capitalization which will indicate disrespect."
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 android:textColor="@color/ColorPrimaryDark"
                 />
 

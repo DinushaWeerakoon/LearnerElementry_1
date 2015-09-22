@@ -39,6 +39,9 @@ public class Lesson17B extends Fragment {
         rb2_2.setTag("yes");
         rb3_1.setTag("yes");
         rb3_2.setTag("None");
+        String qst1="1. You'd better ask the other person whether they are free to speak now, if you receive the call";
+        String qst2="2. You ask the other person whether they are free to speak now, at the beginning of the call";
+        String qst3="3. You better thank the other person for her/his time if you initiate the call";
 
         View.OnClickListener clickListener1 =new View.OnClickListener() {
             @Override

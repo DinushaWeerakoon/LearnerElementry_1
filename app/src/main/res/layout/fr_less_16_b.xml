@@ -1,27 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<LinearLayout
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/activity_horizontal_margin">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:text="Skim read the following paragraph and answer the questions."
+        android:id="@+id/qst"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size"
-            android:text="Skim read the following paragraph and answer the questions."
-            android:id="@+id/qst"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
             android:id="@+id/layout1"
             android:layout_marginTop="10dp"
-            android:layout_below="@+id/qst"
             android:orientation="vertical"
             android:background="@drawable/back">
 
@@ -45,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/text_size"
                 android:layout_margin="5dp"
-                android:text="There are, however, serious disadvantages with television. Long hours of watching can have an adverse effect on a person's phisical condition. Many people spend much of their free-time slouched in front of TV sets. As a result, they do not get enough physical exercise which is necessary for a healthy life. Further, watching television for long hours hinders the development of mind. It is well-known fact that the brain slows down when a person is watching television. Another disadvantage is that television often causes people to become dissatisfied with their lives. The reason for this, is that to many people, what they see in television: for instance, a tele - drama or an advertisement, become very real. People try to live something shown in the television and become depressed when they fail. Another danger in watching television is that some people cannot stop watching it and become addict to it. As a result they do not spend enough time on important areas of their lives, such as education, sports, reading, vising and entertaining with friends and family."/>
+                android:text="@string/less_16_02"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -54,139 +57,154 @@
                 android:layout_margin="5dp"
                 android:text="We must be aware of all the dangers mentioned above. We can overcome these dangers by limiting ourselves to few interesting and educative programmes, if not, there will be more harm than good in watching television. "/>
 
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/qst_des"
+        android:layout_marginTop="10dp"
+        android:text="Select the correct alternative to show what the underlined words mean in the passage."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Viewers"
+        android:id="@+id/qst_1"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/qst_des"/>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grp_1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_1_1"
+            android:textSize="@dimen/text_size"
+            android:text="Active people"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_1_2"
+            android:textSize="@dimen/text_size"
+            android:text="People who watch television"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_1_3"
+            android:textSize="@dimen/text_size"
+            android:text="People who read books"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line_1"
+        android:layout_marginBottom="@dimen/tab_pera"
+        android:layout_marginTop="@dimen/tab_pera"
+        android:background="@color/ColorAccent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/qst_2"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="10dp"
+        android:text="2. Adverse effect"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grp_2">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_2_1"
+            android:textSize="@dimen/text_size"
+            android:text="Harmful effect"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_2_2"
+            android:textSize="@dimen/text_size"
+            android:text="Good effect"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_2_3"
+            android:textSize="@dimen/text_size"
+            android:text="No effect"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line_2"
+        android:layout_marginBottom="@dimen/tab_pera"
+        android:layout_marginTop="@dimen/tab_pera"
+        android:background="@color/ColorAccent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/qst_3"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:text="3. Slouched"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grp_3">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_3_1"
+            android:textSize="@dimen/text_size"
+            android:text="Doing hard work"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_3_2"
+            android:textSize="@dimen/text_size"
+            android:text="Seated lazily"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_3_3"
+            android:textSize="@dimen/text_size"
+            android:text="Hidden"/>
+    </RadioGroup>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/reset_btn"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="right"/>
 
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size"
-            android:layout_below="@+id/layout1"
-            android:layout_marginTop="10dp"
-            android:id="@+id/qst_des"
-            android:layout_marginBottom="10dp"
-            android:text="Select the correct alternative to show what the underlined words mean in the passage."/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1. Viewers"
-            android:id="@+id/qst_1"
-            android:textSize="@dimen/text_size"
-            android:layout_below="@+id/qst_des"/>
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/grp_1"
-            android:layout_below="@+id/qst_1">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_1_1"
-                android:text="Active people"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_1_2"
-                android:text="People who watch television"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_1_3"
-                android:text="People who read books"/>
-        </RadioGroup>
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/grp_1"
-            android:id="@+id/line_1"
-            android:layout_marginBottom="@dimen/tab_pera"
-            android:layout_marginTop="@dimen/tab_pera"
-            android:background="@color/ColorAccent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/qst_2"
-            android:layout_marginTop="5dp"
-            android:layout_below="@+id/line_1"
-            android:text="2. Adverse effect"/>
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/grp_2"
-            android:layout_below="@+id/qst_2">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_2_1"
-                android:text="Harmful effect"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_2_2"
-                android:text="Good effect"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_2_3"
-                android:text="No effect"/>
-        </RadioGroup>
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/grp_2"
-            android:id="@+id/line_2"
-            android:layout_marginBottom="@dimen/tab_pera"
-            android:layout_marginTop="@dimen/tab_pera"
-            android:background="@color/ColorAccent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/qst_3"
-            android:layout_below="@+id/line_2"
-            android:layout_marginTop="5dp"
-            android:text="3. Slouched"/>
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/grp_3"
-            android:layout_below="@+id/qst_3">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_3_1"
-                android:text="Doing hard work"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_3_2"
-                android:text="Seated lazily"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_3_3"
-                android:text="Hidden"/>
-        </RadioGroup>
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reset"
-            android:id="@+id/reset_btn"
-            android:layout_marginBottom="10dp"
-            android:layout_below="@+id/grp_3"
-            android:layout_centerHorizontal="true"/>
-    </RelativeLayout>
-
-
-
-</ScrollView>
+    </ScrollView>
+</LinearLayout>

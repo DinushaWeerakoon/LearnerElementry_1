@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/tab_heading"
         android:text="Intonation Patterns"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textSize="@dimen/text_size_heading" />
 
     <ImageButton
         android:id="@+id/playVideo"
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="Meaningful reading is done with correct intonation patterns."
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 android:textStyle="bold"
                  />
 

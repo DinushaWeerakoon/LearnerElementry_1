@@ -98,7 +98,7 @@
         android:layout_height="wrap_content"
         android:text="Reset"
         android:id="@+id/rest_btn"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="right" />
 
 
 </LinearLayout>

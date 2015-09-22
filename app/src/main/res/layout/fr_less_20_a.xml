@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/tab_heading"
         android:text="Using the Dictionary to Build Word Power"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textSize="@dimen/text_size_heading" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="Dictionary is an invaluable aid and a guide to every person with education. When a dictionary is used to its fullest extent, it can provide a great deal of information."
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textSize="@dimen/text_size"/>
 
             <TextView
                 android:id="@+id/txtLine8"
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="\nMany of the words listed in the dictionary have more than one meaning. Some of them may be already a part of your vocabulary. Therefore it will be a good way to increase your set of vocabulary by learning the additional meanings for words as well."
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textSize="@dimen/text_size" />
 
             <TextView
                 android:id="@+id/txtLine9"
@@ -66,7 +66,7 @@
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="Eg:"
                 android:textColor="@color/ColorPrimaryDark"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textSize="@dimen/text_size" />
 
             <!--Add table Here..-->
 
@@ -76,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="The word ‘slip' is used in seven different ways in the following sentences. Refer to a standard dictionary and get to know the definition of the word used in each sentences"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 android:textColor="@color/ColorPrimaryDark"
                 android:textStyle="bold"/>
 
@@ -95,7 +95,7 @@
 \n7.	We brought new slips for the pillows in your room.
 "
                 android:textColor="@color/ColorPrimaryDark"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textSize="@dimen/text_size" />
 
         </LinearLayout>
 

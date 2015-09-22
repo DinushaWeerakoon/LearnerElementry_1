@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/tab_heading"
         android:text="A Team"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textSize="@dimen/text_size_heading" />
 
 
     <ScrollView
@@ -41,7 +41,7 @@
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="Sometimes it is not easy for us to work alone and find solutions to our problems.
 Therefore, we need to work as a team."
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textSize="@dimen/text_size" />
 
             <TextView
                 android:id="@+id/txtLine2"
@@ -49,7 +49,7 @@ Therefore, we need to work as a team."
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="\nTo work as a team you should develop some of the following qualities."
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 />
 
             <TextView
@@ -65,7 +65,7 @@ Therefore, we need to work as a team."
 \n•	Be flexible
 \n•	Respect others
 "
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 />
 
 

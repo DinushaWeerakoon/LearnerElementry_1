@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/tab_heading"
         android:text="Introduction to Punctuation marks"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textSize="@dimen/text_size_heading"/>
 
     <ImageButton
         android:id="@+id/playVideo"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="Punctuation marks are visual indicators used to highlight something and separate sentences or a part of a sentence from another."
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                  />
 
 
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="To make the interrogative (Question form), we put the linking / helping verb (Eg:  is, was, were) at the beginning of the word."
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 />
 
             <TextView
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="\nWhen using punctuation marks at the correct place the exact meaning can be conveyed."
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 />
 
             <TextView
@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="\nThe names of the appropriate punctuation marks and the uses of those are necessary for proper writing and also to dictate a piece of writing."
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 />
 
 

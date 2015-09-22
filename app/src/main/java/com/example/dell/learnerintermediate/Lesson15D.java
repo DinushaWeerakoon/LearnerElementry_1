@@ -96,6 +96,15 @@ public class Lesson15D extends Fragment {
                 txt7.setText("In case an iceberg comes in sight.");
                 txt8.setText("My men will all be brave and bold.");
 
+                txt1.setTag("When I'm a man I want to be.");
+                txt2.setTag("The captain of a ship at sea.");
+                txt3.setTag("I'll wear a suit of blue and gold,");
+                txt4.setTag("My men will all be brave and bold.");
+                txt5.setTag("I'll keep good watch by day and night.");
+                txt6.setTag("In case an iceberg comes in sight.");
+                txt7.setTag("And when the thunder starts to peal.");
+                txt8.setTag("My men will lash me to the wheel.");
+
                 txt1.setTextColor(Oldcolor);
                 txt2.setTextColor(Oldcolor);
                 txt3.setTextColor(Oldcolor);

@@ -26,7 +26,7 @@ public class Lesson18C extends Fragment {
         final TextView answ_1,answ_2,answ_3,answ_4, answ_5, blank_1,blank_2, blank_3,blank_4,blank_5;
         final Processor DragAndDropAns =new Processor();
 
-        Button reset= (Button) view.findViewById(R.id.reset_btn);
+        //Button reset= (Button) view.findViewById(R.id.reset_btn);
 
         // views to drag
         answ_1= (TextView) view.findViewById(R.id.ans_1);
@@ -52,9 +52,11 @@ public class Lesson18C extends Fragment {
             @Override
             public boolean onLongClick(View v) {
                 ClipData data = ClipData.newPlainText("", "");
-                DragShadow dragShadow = new DragShadow(v);
+                View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
+                v.startDrag(data,shadowBuilder,v,0);
+                //DragShadow dragShadow = new DragShadow(v);
 
-                v.startDrag(data,dragShadow,v,0);
+                //v.startDrag(data,dragShadow,v,0);
                 return false;
             }
         };
@@ -72,7 +74,7 @@ public class Lesson18C extends Fragment {
             }
         };
 
-        View.OnClickListener resetLisner= new View.OnClickListener() {
+        /*View.OnClickListener resetLisner= new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 blank_1.setText(".....................................................................");
@@ -87,7 +89,7 @@ public class Lesson18C extends Fragment {
                 blank_4.setTextColor(Oldcolor);
                 blank_5.setTextColor(Oldcolor);
             }
-        };
+        };*/
 
         answ_1.setOnLongClickListener(ChoiceTouchLisner);
         answ_2.setOnLongClickListener(ChoiceTouchLisner);

@@ -1,7 +1,11 @@
 package com.example.dell.learnerintermediate;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -20,19 +24,20 @@ public class Lesson16B extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view= inflater.inflate(R.layout.fr_less_16_b, container, false);
-        final Processor radio= new Processor();
 
-        Button reset= (Button)view.findViewById(R.id.reset_btn);
+        final Processor radio = new Processor();
 
-        final RadioButton rb1_1 =(RadioButton) view.findViewById(R.id.btn_1_1);
-        final RadioButton rb1_2 =(RadioButton) view.findViewById(R.id.btn_1_2);
-        final RadioButton rb1_3 =(RadioButton) view.findViewById(R.id.btn_1_3);
-        final RadioButton rb2_1 =(RadioButton) view.findViewById(R.id.btn_2_1);
-        final RadioButton rb2_2 =(RadioButton) view.findViewById(R.id.btn_2_2);
-        final RadioButton rb2_3 =(RadioButton) view.findViewById(R.id.btn_2_3);
-        final RadioButton rb3_1 =(RadioButton) view.findViewById(R.id.btn_3_1);
-        final RadioButton rb3_2 =(RadioButton) view.findViewById(R.id.btn_3_2);
-        final RadioButton rb3_3 =(RadioButton) view.findViewById(R.id.btn_3_3);
+        Button reset = (Button) view.findViewById(R.id.reset_btn);
+
+        final RadioButton rb1_1 = (RadioButton) view.findViewById(R.id.btn_1_1);
+        final RadioButton rb1_2 = (RadioButton) view.findViewById(R.id.btn_1_2);
+        final RadioButton rb1_3 = (RadioButton) view.findViewById(R.id.btn_1_3);
+        final RadioButton rb2_1 = (RadioButton) view.findViewById(R.id.btn_2_1);
+        final RadioButton rb2_2 = (RadioButton) view.findViewById(R.id.btn_2_2);
+        final RadioButton rb2_3 = (RadioButton) view.findViewById(R.id.btn_2_3);
+        final RadioButton rb3_1 = (RadioButton) view.findViewById(R.id.btn_3_1);
+        final RadioButton rb3_2 = (RadioButton) view.findViewById(R.id.btn_3_2);
+        final RadioButton rb3_3 = (RadioButton) view.findViewById(R.id.btn_3_3);
 
         rb1_2.setTag("yes");
         rb2_1.setTag("yes");
@@ -44,7 +49,7 @@ public class Lesson16B extends Fragment {
         rb3_1.setTag("None");
         rb3_3.setTag("None");
 
-        View.OnClickListener clickListener1 =new View.OnClickListener() {
+        View.OnClickListener clickListener1 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 rb1_1.setTextColor(Color.BLACK);
@@ -54,7 +59,7 @@ public class Lesson16B extends Fragment {
             }
         };
 
-        View.OnClickListener clickListener2 =new View.OnClickListener() {
+        View.OnClickListener clickListener2 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 rb2_1.setTextColor(Color.BLACK);
@@ -64,7 +69,7 @@ public class Lesson16B extends Fragment {
             }
         };
 
-        View.OnClickListener clickListener3 =new View.OnClickListener() {
+        View.OnClickListener clickListener3 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 rb3_1.setTextColor(Color.BLACK);
@@ -84,12 +89,12 @@ public class Lesson16B extends Fragment {
         rb3_2.setOnClickListener(clickListener3);
         rb3_3.setOnClickListener(clickListener3);
 
-        View.OnClickListener resetLisnr= new View.OnClickListener() {
+        View.OnClickListener resetLisnr = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RadioGroup rg1= (RadioGroup) view.findViewById(R.id.grp_1);
-                RadioGroup rg2= (RadioGroup) view.findViewById(R.id.grp_2);
-                RadioGroup rg3= (RadioGroup) view.findViewById(R.id.grp_3);
+                RadioGroup rg1 = (RadioGroup) view.findViewById(R.id.grp_1);
+                RadioGroup rg2 = (RadioGroup) view.findViewById(R.id.grp_2);
+                RadioGroup rg3 = (RadioGroup) view.findViewById(R.id.grp_3);
 
                 rg1.clearCheck();
                 rg2.clearCheck();
@@ -108,7 +113,6 @@ public class Lesson16B extends Fragment {
             }
         };
         reset.setOnClickListener(resetLisnr);
-
         return view;
 
 

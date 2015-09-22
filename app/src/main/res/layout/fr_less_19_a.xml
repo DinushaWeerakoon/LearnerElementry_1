@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/tab_heading"
         android:text="Ready to Twist Your Tongue?!!!"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textSize="@dimen/text_size_heading" />
 
     <ImageButton
         android:id="@+id/playVideo"
@@ -53,7 +53,7 @@
 \n•	It provides us with lot of fun and laughter.
 \n•	But they are not only for fun and laughter they serve a practical purpose in practicing pronunciation as well.
 "
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 />
 
             </LinearLayout>

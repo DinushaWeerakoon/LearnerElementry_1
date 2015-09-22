@@ -7,6 +7,7 @@
     <dimen name="text_size_small">25dp</dimen>
     <dimen name="text_size_heading">40dp</dimen>
     <dimen name="text_drag">30dp</dimen>
+    <dimen name="blank_size">70dp</dimen>
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>

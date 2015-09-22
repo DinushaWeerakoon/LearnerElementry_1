@@ -4,5 +4,6 @@
     <dimen name="tab_heading">20dp</dimen>
     <dimen name="tab_pera">10dp</dimen>
     <dimen name="tab_pera_left">20dp</dimen>
+    <dimen name="blank_size">40dp</dimen>
 
 </resources>

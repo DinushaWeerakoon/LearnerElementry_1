@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/tab_heading"
         android:text="Skimming"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textSize="@dimen/text_size_heading" />
 
     <ImageButton
         android:id="@+id/playVideo"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/tab_pera"
                 android:text="Steps for skimming to identify key words."
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 android:textStyle="bold"
                             />
 
@@ -65,7 +65,7 @@
 \n•	Read the 1st 2 lines of every other paragraph and underline the main idea of the paragraph.
 \n•	Read the last paragraph which is the conclusion in complete.
 "
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size"
                 />
 
                     </LinearLayout>

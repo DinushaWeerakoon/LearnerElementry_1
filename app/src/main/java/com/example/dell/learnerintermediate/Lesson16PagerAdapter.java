@@ -24,6 +24,7 @@ public class Lesson16PagerAdapter extends FragmentStatePagerAdapter {
             fragment = new Lesson16B();
         }
 
+
         return fragment;
     }
 

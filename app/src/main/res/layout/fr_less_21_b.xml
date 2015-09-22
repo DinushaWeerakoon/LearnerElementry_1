@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:text="Reset"
             android:id="@+id/reset_btn1"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="right" />
         <View
             android:layout_width="fill_parent"
             android:layout_height="1dp"
@@ -167,7 +167,7 @@
             android:layout_height="wrap_content"
             android:text="Reset"
             android:id="@+id/reset_btn"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="right" />
 
 
     </LinearLayout>

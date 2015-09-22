@@ -41,19 +41,24 @@ public class Lesson21B extends Fragment {
         txt1.setTag("Choose an e-card company.There are many companies including 123 greetings,yahoo,hallmark etc.");
         txt2.setTag("Decide on your e-card to match the situation.Preview the cards and select the best.");
         txt3.setTag("Type and add a personal note to your card.Remember,it should be short.");
-        txt4.setTag("Select the option and preview your entire e-card.'Edit' the card if you have any mistakes.");
+        //txt4.setTag("Select the option and preview your entire e-card.'Edit' the card if you have any mistakes.");
         txt5.setTag("Include your email recipients.");
         txt6.setTag("Select the option to receive a notice when the recipients open the cards.");
         txt7.setTag("Send your e-card after sending up the date.");
+
+        txt4.setTextColor(Color.GREEN);
+        txt4.setTag("done");
 
 
         View.OnLongClickListener ChoiceTouchLisner =new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
                 ClipData data = ClipData.newPlainText("", "");
-                DragShadow dragShadow = new DragShadow(v);
+                View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
+                v.startDrag(data,shadowBuilder,v,0);
+               // DragShadow dragShadow = new DragShadow(v);
 
-                v.startDrag(data,dragShadow,v,0);
+                //v.startDrag(data,dragShadow,v,0);
                 return false;
             }
         };
@@ -124,10 +129,18 @@ public class Lesson21B extends Fragment {
                 txt6.setText("Choose an e-card company.There are many companies including 123 greetings,yahoo,hallmark etc.");
                 txt7.setText("Select the option to receive a notice when the recipients open the cards.");
 
+                txt1.setTag("Choose an e-card company.There are many companies including 123 greetings,yahoo,hallmark etc.");
+                txt2.setTag("Decide on your e-card to match the situation.Preview the cards and select the best.");
+                txt3.setTag("Type and add a personal note to your card.Remember,it should be short.");
+                txt4.setTag("done");
+                txt5.setTag("Include your email recipients.");
+                txt6.setTag("Select the option to receive a notice when the recipients open the cards.");
+                txt7.setTag("Send your e-card after sending up the date.");
+
                 txt1.setTextColor(Oldcolor);
                 txt2.setTextColor(Oldcolor);
                 txt3.setTextColor(Oldcolor);
-                txt4.setTextColor(Oldcolor);
+                txt4.setTextColor(Color.GREEN);
                 txt5.setTextColor(Oldcolor);
                 txt6.setTextColor(Oldcolor);
                 txt7.setTextColor(Oldcolor);
