@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="text_size">25dp</dimen>
-    <dimen name="text_size_small">10dp</dimen>
-    <dimen name="text_size_heading">30dp</dimen>
-    <dimen name="text_drag">22dp</dimen>
+    <dimen name="text_size">20dp</dimen>
+    <dimen name="text_size_small">5dp</dimen>
+    <dimen name="text_size_heading">25dp</dimen>
+    <dimen name="text_drag">17dp</dimen>
     <dimen name="blank_size">50dp</dimen>
 
     <dimen name="activity_horizontal_margin">16dp</dimen>

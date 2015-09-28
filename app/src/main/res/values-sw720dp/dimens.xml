@@ -3,10 +3,10 @@
          (such as screen margins) for screens with more than 820dp of available width. This
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
 
-    <dimen name="text_size">35dp</dimen>
-    <dimen name="text_size_small">25dp</dimen>
-    <dimen name="text_size_heading">40dp</dimen>
-    <dimen name="text_drag">30dp</dimen>
+    <dimen name="text_size">25dp</dimen>
+    <dimen name="text_size_small">20dp</dimen>
+    <dimen name="text_size_heading">35dp</dimen>
+    <dimen name="text_drag">25dp</dimen>
     <dimen name="blank_size">70dp</dimen>
 
     <dimen name="activity_horizontal_margin">16dp</dimen>

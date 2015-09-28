@@ -111,6 +111,34 @@ public class Lesson22B extends Fragment {
         c3.setTag("t");
         c4.setTag("e");
 
+        /*a2.setFocusable(false);
+        a2.setClickable(false);
+        a3.setFocusable(false);
+        a3.setClickable(false);
+        a4.setFocusable(false);
+        a4.setClickable(false);
+        a5.setFocusable(false);
+        a5.setClickable(false);
+        a6.setFocusable(false);
+        a6.setClickable(false);
+
+        b2.setFocusable(false);
+        b2.setClickable(false);
+        b3.setFocusable(false);
+        b3.setClickable(false);
+        b4.setFocusable(false);
+        b4.setClickable(false);
+
+        c2.setFocusable(false);
+        c2.setClickable(false);
+        c3.setFocusable(false);
+        c3.setClickable(false);
+        c4.setFocusable(false);
+        c4.setClickable(false);*/
+
+
+
+
         View.OnClickListener check1lisner= new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -340,4 +368,13 @@ public class Lesson22B extends Fragment {
         return view;
 
 
-    }}
+    }
+    private boolean isEmpty(EditText etText) {
+        if (etText.getText().toString().trim().length() > 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+}

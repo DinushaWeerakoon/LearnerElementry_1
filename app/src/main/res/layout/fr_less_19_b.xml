@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/qst_1"
+        android:layout_marginBottom="10dp"
+        android:text="Read the following lines carefully and hold drag and drop in order to get a meaningful verse without twisting your tongue."/>
+
+
+
+    <com.example.dell.learnerintermediate.DynamicListView
+        android:id="@+id/dynamic_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/qst_1" />
+
+</RelativeLayout>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/activity_horizontal_margin">
@@ -93,7 +117,7 @@
                 android:text="There's a tail on the frog on the bump on the branch on the log in the hole in the bottom of the sea."/>
 
     <Button
-        style="?android:attr/buttonStyleSmall"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset"
@@ -102,4 +126,4 @@
 
 
 </LinearLayout>
-</ScrollView>
+</ScrollView>-->

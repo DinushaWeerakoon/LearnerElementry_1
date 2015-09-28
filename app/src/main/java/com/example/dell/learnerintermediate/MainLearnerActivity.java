@@ -11,6 +11,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.GestureDetector;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -431,6 +432,28 @@ public class MainLearnerActivity extends ActionBarActivity {
 
     public void goActivities(View view) {
         viewPager.setCurrentItem(viewPager.getChildCount());
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        if(keyCode == KeyEvent.KEYCODE_BACK && viewPager.getCurrentItem()!=0){
+
+            viewPager.setCurrentItem(0, true);
+            return true;
+        }
+        else if (keyCode == KeyEvent.KEYCODE_BACK && viewPager.getCurrentItem()==0 && viewPager.getAdapter().getCount()!=1) {
+            //return super.onKeyDown(keyCode, event);
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            viewPager = (ViewPager) findViewById(R.id.main_pager);
+            viewPager.setAdapter(new HomePagerAdapter(fragmentManager));
+
+            return true;
+        }
+
+        else {
+            return super.onKeyDown(keyCode, event);
+        }
     }
 
     /*@Override

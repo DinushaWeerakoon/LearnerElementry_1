@@ -50,14 +50,7 @@
                 android:layout_margin="5dp"
                 android:text="@string/less_16_02"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:text="We must be aware of all the dangers mentioned above. We can overcome these dangers by limiting ourselves to few interesting and educative programmes, if not, there will be more harm than good in watching television. "/>
-
-        </LinearLayout>
+            </LinearLayout>
     </ScrollView>
 
     <ScrollView
@@ -197,7 +190,7 @@
     </RadioGroup>
 
     <Button
-        style="?android:attr/buttonStyleSmall"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset"

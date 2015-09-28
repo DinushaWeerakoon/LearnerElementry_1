@@ -15,13 +15,43 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by UCSC-PC on 6/4/2015.
  */
 public class Lesson21B extends Fragment {
 
-
+    private List<String> rowData = Arrays.asList("Include your email recipients.", "Type and add a personal note to your card.Remember,it should be short.", "Decide on your e-card to match the situation.Preview the cards and select the best.", "Select the option and preview your entire e-card.'Edit' the card if you have any mistakes.", "Send your e-card after sending up the date.", "Choose an e-card company.There are many companies including 123 greetings,yahoo,hallmark etc.", "Select the option to receive a notice when the recipients open the cards.");
+    private List<String> CorrectrowData = Arrays.asList("Choose an e-card company.There are many companies including 123 greetings,yahoo,hallmark etc.", "Decide on your e-card to match the situation.Preview the cards and select the best.", "Type and add a personal note to your card.Remember,it should be short.", "Select the option and preview your entire e-card.'Edit' the card if you have any mistakes.", "Include your email recipients.","Select the option to receive a notice when the recipients open the cards.","Send your e-card after sending up the date.");
     @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view= inflater.inflate(R.layout.fr_less_21_b, container, false);
+
+        final DynamicListView listView = (DynamicListView) view.findViewById(R.id.dynamic_list_view);
+        final Lesson15DListAdapter adapter = new Lesson15DListAdapter(getActivity().getApplicationContext(), rowData);
+        adapter.fillTranslarentMobileRowBackground(getResources().getColor(android.R.color.white));
+        adapter.bindToListView(listView);
+        adapter.setOnItemsSwappedListener(new DynamicArrayAdapter.ItemSwapListener() {
+            @Override
+            public void onItemsSwapped(int pos1, int pos2) {
+                for (int i=0;i<rowData.size();i++) {
+                    if(adapter.getItem(i).equals(CorrectrowData.get(i))){
+                        if(i==rowData.size()-1){
+                            listView.setBackgroundColor(Color.GREEN);
+                        }
+                    }
+                    else{
+                        break;
+                    }
+                }
+            }
+        });
+        return view;
+
+
+    /*@Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view= inflater.inflate(R.layout.fr_less_21_b, container, false);
 
@@ -172,6 +202,6 @@ public class Lesson21B extends Fragment {
         reset2.setOnClickListener(resetlisnr2);
 
         reset1.setOnClickListener(resetLisner1);
-        return view;
+        return view;*/
 
     }}

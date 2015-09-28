@@ -2,6 +2,7 @@ package com.example.dell.learnerintermediate;
 
 import android.content.ClipData;
 import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,13 +13,42 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by UCSC-PC on 6/4/2015.
  */
 public class Lesson19B extends Fragment {
 
-
+    private List<String> rowData = Arrays.asList("There's a branch on the log in the hole in the bottom of the sea.", "There's a frog on the bump on the branch on the log in the hole in the bottom of the sea.", "There's a hole in the bottom of the sea.", "There's a speck on the tail on the frog on the bump on the branch on the log in the hole in the bottom of the sea.", "There's a log in the hole in the bottom of the sea.", "There's fleck on the speck on the tail on the frog on the bump on the brach on the log in the hole in the bottom of the sea.", "There's a bump on the branch on the log in the hole in the bottom of the sea.", "There's a tail on the frog on the bump on the branch on the log in the hole in the bottom of the sea.");
+    private List<String> CorrectrowData = Arrays.asList("There's a hole in the bottom of the sea.", "There's a log in the hole in the bottom of the sea.", "There's a branch on the log in the hole in the bottom of the sea.", "There's a bump on the branch on the log in the hole in the bottom of the sea.", "There's a frog on the bump on the branch on the log in the hole in the bottom of the sea.","There's a tail on the frog on the bump on the branch on the log in the hole in the bottom of the sea.","There's a speck on the tail on the frog on the bump on the branch on the log in the hole in the bottom of the sea.","There's fleck on the speck on the tail on the frog on the bump on the brach on the log in the hole in the bottom of the sea.");
     @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view= inflater.inflate(R.layout.fr_less_19_b, container, false);
+
+        final DynamicListView listView = (DynamicListView) view.findViewById(R.id.dynamic_list_view);
+        final Lesson15DListAdapter adapter = new Lesson15DListAdapter(getActivity().getApplicationContext(), rowData);
+        adapter.fillTranslarentMobileRowBackground(getResources().getColor(android.R.color.white));
+        adapter.bindToListView(listView);
+        adapter.setOnItemsSwappedListener(new DynamicArrayAdapter.ItemSwapListener() {
+            @Override
+            public void onItemsSwapped(int pos1, int pos2) {
+                for (int i=0;i<rowData.size();i++) {
+                    if(adapter.getItem(i).equals(CorrectrowData.get(i))){
+                        if(i==rowData.size()-1){
+                            listView.setBackgroundColor(Color.GREEN);
+                        }
+                    }
+                    else{
+                        break;
+                    }
+                }
+            }
+        });
+        return view;
+
+/*  @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view =inflater.inflate(R.layout.fr_less_19_b, container, false);
 
@@ -124,7 +154,7 @@ public class Lesson19B extends Fragment {
         txt8.setOnDragListener(ChoiceDragLisner);
         reset.setOnClickListener(resetLisner);
 
-        return view;
+        return view;*/
 
 
 }}

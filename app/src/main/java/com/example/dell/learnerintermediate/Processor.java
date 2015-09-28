@@ -2,6 +2,7 @@ package com.example.dell.learnerintermediate;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.DragEvent;
 import android.view.View;
@@ -11,6 +12,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+
+import java.util.List;
 
 /**
  * Created by ucsc on 9/3/2015.
@@ -34,7 +37,7 @@ public class Processor {
                     target.setText(dragged.getText());
 
                     if (target.getText().equals(target.getTag())) {
-                        target.setBackgroundColor(Color.GREEN);
+                        target.setBackgroundColor(Color.parseColor("#689F38"));
                         target.setTag("done");
                         dragged.setVisibility(View.INVISIBLE);
                     } else {
@@ -88,20 +91,8 @@ public class Processor {
 
     }
 
-    public void dragOrder(View v, int dragEvent, TextView dragged, ColorStateList Oldcolor){
-        switch (dragEvent){
 
-            case DragEvent.ACTION_DRAG_ENTERED:break;
 
-            case DragEvent.ACTION_DRAG_EXITED:break;
-
-            case DragEvent.ACTION_DROP:
-
-                TextView target = (TextView) v;
-                break;
-
-        }
-    }
 
 
     // This method is used for button
@@ -150,7 +141,7 @@ public class Processor {
         RadioButton optionSelected = (RadioButton) v;
 
         if(v.getTag() == "yes"){
-            optionSelected.setTextColor(Color.GREEN);
+            optionSelected.setTextColor(Color.parseColor("#689F38"));
         }
         else{
             optionSelected.setTextColor(Color.RED);

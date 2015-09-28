@@ -2,6 +2,7 @@ package com.example.dell.learnerintermediate;
 
 import android.content.ClipData;
 import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,13 +13,41 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by UCSC-PC on 6/4/2015.
  */
 public class Lesson15D extends Fragment {
 
-
+    private List<String> rowData = Arrays.asList("My men will lash me to the wheel.", "And when the thunder starts to peal.", "I'll keep good watch by day and night.", "When I'm a man I want to be.", "I'll wear a suit of blue and gold,", "The captain of a ship at sea.", "In case an iceberg comes in sight.", "My men will all be brave and bold.");
+    private List<String> CorrectrowData = Arrays.asList("When I'm a man I want to be.", "The captain of a ship at sea.", "I'll wear a suit of blue and gold,", "My men will all be brave and bold.", "I'll keep good watch by day and night.","In case an iceberg comes in sight.","And when the thunder starts to peal.","My men will lash me to the wheel.");
     @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view= inflater.inflate(R.layout.fr_less_15_d, container, false);
+
+        final DynamicListView listView = (DynamicListView) view.findViewById(R.id.dynamic_list_view);
+        final Lesson15DListAdapter adapter = new Lesson15DListAdapter(getActivity().getApplicationContext(), rowData);
+        adapter.fillTranslarentMobileRowBackground(getResources().getColor(android.R.color.white));
+        adapter.bindToListView(listView);
+        adapter.setOnItemsSwappedListener(new DynamicArrayAdapter.ItemSwapListener() {
+            @Override
+            public void onItemsSwapped(int pos1, int pos2) {
+                for (int i=0;i<rowData.size();i++) {
+                    if(adapter.getItem(i).equals(CorrectrowData.get(i))){
+                        if(i==rowData.size()-1){
+                            listView.setBackgroundColor(Color.GREEN);
+                        }
+                    }
+                    else{
+                        break;
+                    }
+                }
+            }
+        });
+        return view;
+    /*@Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fr_less_15_d, container, false);
 
@@ -47,14 +76,6 @@ public class Lesson15D extends Fragment {
         txt7.setTag("And when the thunder starts to peal.");
         txt8.setTag("My men will lash me to the wheel.");
 
-        /*txt1.setTag(8);
-        txt2.setTag(7);
-        txt3.setTag(5);
-        txt4.setTag(1);
-        txt5.setTag(3);
-        txt6.setTag(2);
-        txt7.setTag(6);
-        txt8.setTag(4);*/
 
 
         View.OnLongClickListener ChoiceTouchLisner =new View.OnLongClickListener() {
@@ -63,7 +84,7 @@ public class Lesson15D extends Fragment {
                 ClipData data = ClipData.newPlainText("", "");
                 View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
                 v.startDrag(data,shadowBuilder,v,0);
-                //return true;*/
+                //return true;
                 //DragShadow dragShadow = new DragShadow(v);
 
                 //v.startDrag(data,dragShadow,v,0);
@@ -136,7 +157,7 @@ public class Lesson15D extends Fragment {
 
         reset.setOnClickListener(resetLisner);
 
-        return view;
+        return view;*/
 
 
 }}
